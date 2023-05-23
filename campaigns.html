@@ -1616,32 +1616,35 @@
 	</script>
 
 	<script>
-		const container = document.querySelector('.campaigns-btns');
-		const scrollLeftButton = document.querySelector('.scroll-left');
-		const scrollRightButton = document.querySelector('.scroll-right');
-	
-		scrollLeftButton.addEventListener('click', () => {
-		container.scrollLeft -= container.offsetWidth * 0.2;
-		});
-	
-		scrollRightButton.addEventListener('click', () => {
-		container.scrollLeft += container.offsetWidth * 0.2;
-		});
-	
-		container.addEventListener('scroll', () => {
-		// Проверяем положение прокрутки и скрываем/показываем стрелки
-		if (container.scrollLeft <= 0) {
-			scrollLeftButton.style.display = 'none';
-		} else {
-			scrollLeftButton.style.display = 'block';
-		}
-	
-		if (container.scrollLeft + container.offsetWidth >= container.scrollWidth) {
-			scrollRightButton.style.display = 'none';
-		} else {
-			scrollRightButton.style.display = 'block';
-		}
-		});
+      const container = document.querySelector('.campaigns-btns');
+      const scrollLeftButton = document.querySelector('.scroll-left');
+      const scrollRightButton = document.querySelector('.scroll-right');
+      
+      scrollLeftButton.style.display = 'none'; // Скрываем левую кнопку изначально
+      
+      scrollLeftButton.addEventListener('click', () => {
+        container.scrollLeft -= container.offsetWidth * 0.2;
+      });
+      
+      scrollRightButton.addEventListener('click', () => {
+        container.scrollLeft += container.offsetWidth * 0.2;
+      });
+      
+      container.addEventListener('scroll', () => {
+        if (container.scrollLeft <= 0) {
+          scrollLeftButton.style.setProperty('display', 'none', 'important');
+        } else {
+          scrollLeftButton.style.setProperty('display', 'block', 'important');
+        }
+      
+        const isEndOfScroll = container.scrollLeft + container.offsetWidth >= container.scrollWidth - 1;
+        if (isEndOfScroll) {
+          scrollRightButton.style.setProperty('display', 'none', 'important');
+        } else {
+          scrollRightButton.style.setProperty('display', 'block', 'important');
+        }
+      });
+      
   	</script>
 </body>
 </html>
