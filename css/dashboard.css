@@ -1234,7 +1234,7 @@ body {
 }
 
 .col-6 {
-  width: 55%;
+  width: 47.6%;
 }
 
 .col-5 {
@@ -2909,7 +2909,7 @@ main {
   height: 100%;
   border-bottom: 1px solid #eef0f6;
   overflow-y: auto;
-  margin-top: 30px;
+  margin-top: 18px;
 }
 .sidebar-list__item {
   transition: all 0.33s;
@@ -2920,6 +2920,7 @@ main {
   padding-left: 16px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 6px;
 }
 .sidebar-list__item:last-child {
   margin-bottom: 24px;
@@ -3141,7 +3142,7 @@ main {
 .tracking {
   box-sizing: border-box;
   height: 166px;
-  width: 57.4%;
+  width: 48.1%;
 }
 .tracking .input-wrapper {
   width: 100%;
@@ -3636,7 +3637,7 @@ main {
 
 .payments {
   height: 416px;
-  width: 100%;
+  width: 93.1%;
 }
 
 .campaigns {
@@ -3889,7 +3890,7 @@ main {
   left: 0;
   height: 100%;
   box-sizing: border-box;
-  width: 248px;
+  width: 235px;
 }
 
 .container-fluid.collapsed .sidebar .sidebar-list__item p {
@@ -3900,11 +3901,11 @@ main {
 }
 
 .container-fluid.collapsed .header-right {
-  width: 55%;
+  width: 62.8%;
 }
 
 .container-fluid.collapsed .content-main {
-  margin-left: 260px;
+  margin-left: 248px;
 }
 
 .container-fluid.collapsed .content-main .header-dashboard .content-fluid {
@@ -3914,7 +3915,7 @@ main {
 }
 
 .container-fluid.collapsed .content-main .header-dashboard {
-  left: 242px;
+  left: 235px;
 }
 
 .container-fluid.collapsed .manager {
@@ -4140,4 +4141,29 @@ main {
 
 .campaigns-table thead tr th:first-child {
   min-width: 103px;
+}
+
+.wrapper-activities {
+  margin-right: 15px;
+}
+
+.balance-text {
+  margin-right: 23px;
+}
+
+.campaign {
+  margin-right: -20.4px;
+}
+
+.campaigns-table thead tr th:nth-child(2) {
+  white-space: nowrap;
+}
+
+.campaigns-table tbody tr td:first-child {
+  min-width: 180px;
+}
+
+.create-campaigns {
+  width: 244px;
+  height: 56px;
 }
