@@ -1620,7 +1620,7 @@
       const scrollLeftButton = document.querySelector('.scroll-left');
       const scrollRightButton = document.querySelector('.scroll-right');
       
-      scrollLeftButton.style.display = 'none'; // Скрываем левую кнопку изначально
+      scrollLeftButton.style.setProperty('display', 'none', 'important');
       
       scrollLeftButton.addEventListener('click', () => {
         container.scrollLeft -= container.offsetWidth * 0.2;
