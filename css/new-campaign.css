@@ -4883,3 +4883,9 @@ main {
   border: 0;
   font-size: 18px;
 }
+
+.select2-results__option--selectable{
+  display: flex;
+  align-items: center;
+  height: 52px;
+}
