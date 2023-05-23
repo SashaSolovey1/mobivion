@@ -1317,29 +1317,33 @@
       const container = document.querySelector('.campaigns-btns');
       const scrollLeftButton = document.querySelector('.scroll-left');
       const scrollRightButton = document.querySelector('.scroll-right');
-    
+      
+      scrollLeftButton.style.display = 'none'; // Скрываем левую кнопку изначально
+      
       scrollLeftButton.addEventListener('click', () => {
         container.scrollLeft -= container.offsetWidth * 0.2;
       });
-    
+      
       scrollRightButton.addEventListener('click', () => {
         container.scrollLeft += container.offsetWidth * 0.2;
       });
-    
+      
       container.addEventListener('scroll', () => {
-        // Проверяем положение прокрутки и скрываем/показываем стрелки
         if (container.scrollLeft <= 0) {
-          scrollLeftButton.style.display = 'none';
+          scrollLeftButton.style.setProperty('display', 'none', 'important');
         } else {
-          scrollLeftButton.style.display = 'block';
+          scrollLeftButton.style.setProperty('display', 'block', 'important');
         }
-    
-        if (container.scrollLeft + container.offsetWidth >= container.scrollWidth) {
-          scrollRightButton.style.display = 'none';
+      
+        const isEndOfScroll = container.scrollLeft + container.offsetWidth >= container.scrollWidth - 1;
+        if (isEndOfScroll) {
+          scrollRightButton.style.setProperty('display', 'none', 'important');
         } else {
-          scrollRightButton.style.display = 'block';
+          scrollRightButton.style.setProperty('display', 'block', 'important');
         }
       });
+      
+      
     </script>
   </body>
 </html>
