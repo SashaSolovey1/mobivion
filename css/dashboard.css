@@ -2941,13 +2941,13 @@ main {
   fill: #713ee6;
 }
 .sidebar-list__item.active p {
-  color: #713ee6;
+  color: #713ee6 !important;
 }
 .sidebar-list__item:hover svg path {
-  fill: #713ee6;
+  fill: #713ee6 !important;
 }
 .sidebar-list__item:hover p {
-  color: #713ee6;
+  color: #713ee6 !important;
 }
 .sidebar-list__item:hover {
   background-color: rgba(113, 62, 230, 0.1);
