@@ -18,7 +18,6 @@
         </div>
 
         <div class="sidebar-list align-items-center justify-content-end">
-          <a href="dashboard.html">
           <div id="dashboard-link"
             class="sidebar-list__item d-flex align-items-center justify-content-start active"
           >
@@ -39,8 +38,7 @@
 
             <p class="text-lg font-semibold">Dashboard</p>
           </div>
-          </a>
-          <a href="campaigns.html">
+
           <div id="campaigns-link"
             class="sidebar-list__item d-flex align-items-center justify-content-start"
           >
@@ -59,8 +57,7 @@
 
             <p>Campaigns</p>
           </div>
-          </a>
-          <a href="statistics.html">
+
           <div id="statistics-link"
             class="sidebar-list__item d-flex align-items-center justify-content-start"
           >
@@ -99,8 +96,7 @@
 
             <p>Statistics</p>
           </div>
-          </a>
-          <a href="tracking.html">
+
           <div id="tracking-link"
             class="sidebar-list__item d-flex align-items-center justify-content-start"
           >
@@ -127,8 +123,7 @@
 
             <p>Tracking</p>
           </div>
-          </a>
-          <a href="#">
+
           <div id="payments-link"
             class="sidebar-list__item d-flex align-items-center justify-content-start"
           >
@@ -166,8 +161,7 @@
 
             <p>FAQ</p>
           </div>
-          </a>
-          <a href="#">
+
           <div id="support-link"
             class="sidebar-list__item d-flex align-items-center justify-content-start"
           >
@@ -188,7 +182,7 @@
 
             <p>Support</p>
           </div>
-          </a>
+
           <div
             class="mx-4 mt-4 manager"
             style="padding-top: 17.7px; border-top: 1px solid #e9e9e9"
@@ -813,7 +807,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="row scroll pl-0 table-container">
+                <div class="row scroll pl-0 ml--1 table-container">
                   <table class="table table-borderless campaigns-table">
                     <thead>
                       <tr>
@@ -1002,7 +996,7 @@
                   </div>
                 </div>
                 <div class="row scroll pl-0">
-                  <table class="table table-borderless campaigns-table-1 pr-5 mr-2">
+                  <table class="table table-borderless campaigns-table pr-5">
                     <thead>
                       <tr>
                         <th class="fs-14 fw-600" scope="col">
@@ -1374,7 +1368,44 @@
       }
     </script>
 
-  
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var faqLink = document.getElementById("dashboard-link");
+        faqLink.addEventListener("click", function() {
+          window.location.href = "dashboard.html";
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function() {
+        var faqLink = document.getElementById("campaigns-link");
+        faqLink.addEventListener("click", function() {
+          window.location.href = "campaigns.html";
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function() {
+        var faqLink = document.getElementById("statistics-link");
+        faqLink.addEventListener("click", function() {
+          window.location.href = "statistics.html";
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function() {
+        var faqLink = document.getElementById("tracking-link");
+        faqLink.addEventListener("click", function() {
+          window.location.href = "tracking.html";
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function() {
+        var faqLink = document.getElementById("payments-link");
+        faqLink.addEventListener("click", function() {
+          window.location.href = "payments.html";
+        });
+      });
+
+
+    </script>
 
   </body>
 </html>
