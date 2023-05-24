@@ -4247,3 +4247,8 @@ th:hover svg path {
     left: 54%;
   }
 }
+
+  .sorted::after {
+      content: "";
+      background-image: url('iconamoon_sorting-left-duotone.svg');
+    }
