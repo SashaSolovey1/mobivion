@@ -43,6 +43,10 @@
   margin-top: 1rem !important;
 }
 
+.mt-3-5 {
+  margin-top: 1.8rem !important;
+}
+
 .mt-4 {
   margin-top: 1.5rem !important;
 }
@@ -79,6 +83,10 @@
   margin-bottom: 6rem !important;
 }
 
+.ml--1 {
+  margin-left: -0.5rem !important;
+}
+
 .ml-1 {
   margin-left: 0.25rem !important;
 }
@@ -93,6 +101,10 @@
 
 .ml-4 {
   margin-left: 1.5rem !important;
+}
+
+.ml-4-5 {
+  margin-left: 2rem !important;
 }
 
 .ml-5 {
@@ -151,8 +163,12 @@
 }
 
 .my-4 {
-  margin-top: 1.5rem !important;
-  margin-bottom: 1.5rem !important;
+  margin-top: 1.6rem !important;
+  margin-bottom: 1.6rem !important;
+}
+
+.my-4-5 {
+  margin-top: 1.6;
 }
 
 .my-5 {
@@ -223,6 +239,11 @@
 .py-1 {
   padding-top: 8px !important;
   padding-bottom: 8px !important;
+}
+
+.py-1-5 {
+  padding-top: 9.7px !important;
+  padding-bottom: 11px !important;
 }
 
 .py-2 {
@@ -951,7 +972,7 @@ table tbody tr th {
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
   border-collapse: separate;
-  border-spacing: 0 20px;
+  border-spacing: 0 17px;
 }
 
 .table > :not(caption) > * > * {
@@ -3152,7 +3173,7 @@ main {
 .tracking {
   box-sizing: border-box;
   height: 166px;
-  width: 48.1%;
+  width: 54.4%;
 }
 .tracking .input-wrapper {
   width: 100%;
@@ -3179,11 +3200,13 @@ main {
 
 .bg-white-block > .d-flex {
   padding: 0 15px;
+  padding-right: 20px;
 }
 
 .bg-white-block > .row {
   padding: 0 10px;
   height: 94%;
+  padding-right: 20px;
 }
 
 .bg-grey-block {
@@ -4170,7 +4193,7 @@ main {
 }
 
 .campaigns-table tbody tr td:first-child {
-  min-width: 180px;
+  min-width: 200px;
 }
 
 .create-campaigns {
@@ -4192,4 +4215,28 @@ th:hover svg path {
 
 .sorted {
   color: #713EE6 !important; 
+}
+
+.campaigns-table thead tr th:nth-child(4) {
+  min-width: 60px;
+}
+
+.campaigns-table thead tr th:nth-child(5) {
+  min-width: 70px;
+}
+
+.table-container {
+  padding-right: 28px !important;
+}
+
+.stats {
+  width: 28.8% !important;
+}
+
+.tracking > .bg-white-block {
+  padding-left: 10px;
+}
+
+.bg-white-block > .d-flex > .d-inline-block {
+  margin-right: -10px;
 }
