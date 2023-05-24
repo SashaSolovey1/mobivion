@@ -4263,9 +4263,8 @@ main {
   min-width: 78px;
 }
 
-
-
-.campaigns-table tbody tr td {
+.campaigns-table tbody tr td,
+.campaigns-table tbody tr th {
   min-width: 50px;
   padding-left: 20px !important;
 }
