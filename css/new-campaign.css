@@ -4888,3 +4888,7 @@ main {
   align-items: center;
   height: 52px;
 }
+
+.header-dashboard{
+box-shadow: 13px 10px 10px -5px rgba(0, 0, 0, 0.1);
+}
