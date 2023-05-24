@@ -4240,3 +4240,9 @@ th:hover svg path {
 .bg-white-block > .d-flex > .d-inline-block {
   margin-right: -10px;
 }
+
+@media screen and (max-width: 1525px){
+  .header-row > .col-5{
+    left: 54%;
+  }
+}
