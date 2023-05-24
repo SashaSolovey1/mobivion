@@ -4246,3 +4246,8 @@ th:hover svg path {
     left: 54%;
   }
 }
+@media screen and (max-width: 1700px){
+  .header-row > .col-5{
+    left: 59%;
+  }
+}
