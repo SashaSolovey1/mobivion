@@ -973,10 +973,11 @@ table tbody tr th {
   border-color: var(--bs-table-border-color);
   border-collapse: separate;
   border-spacing: 0 17px;
+  line-height: 12px !important;
 }
 
 .table > :not(caption) > * > * {
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 0.7rem;
   background-color: var(--bs-table-bg);
   border-bottom-width: var(--bs-border-width);
   box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
@@ -4190,10 +4191,17 @@ main {
 
 .campaigns-table thead tr th:nth-child(2) {
   white-space: nowrap;
+  max-width: 50px;
+  min-width: 80px;
+
+}
+
+.campaigns-table tbody tr td {
+  min-width: 50px;
 }
 
 .campaigns-table tbody tr td:first-child {
-  min-width: 200px;
+  min-width: 190px;
 }
 
 .create-campaigns {
@@ -4240,3 +4248,4 @@ th:hover svg path {
 .bg-white-block > .d-flex > .d-inline-block {
   margin-right: -10px;
 }
+
