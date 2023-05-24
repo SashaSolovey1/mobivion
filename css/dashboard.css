@@ -4292,9 +4292,9 @@ th:hover svg path {
 
 .sorted::after {
   content: "";
-  background-image: url('iconamoon_sorting-left-duotone.svg');
+  background-image: url('/img/iconamoon_sorting-left-duotone.svg');
   position: absolute;
-  right: -3px;
+  right: 10px;
 }
 
 .header-dashboard{
