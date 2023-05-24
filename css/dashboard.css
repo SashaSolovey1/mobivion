@@ -940,6 +940,8 @@
 table {
   caption-side: bottom;
   border-collapse: collapse;
+  position: inherit;
+    height: 1px;
 }
 table thead tr {
   vertical-align: middle;
@@ -985,7 +987,7 @@ table tbody tr th {
 }
 
 .table > tbody {
-  vertical-align: inherit;
+  vertical-align: top;
   width: 100%;
 }
 
