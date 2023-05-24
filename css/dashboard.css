@@ -3719,6 +3719,9 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+  .scroll{
+   width: 50%; 
+  }
   .content {
     display: flex;
     flex-direction: column;
@@ -3762,13 +3765,11 @@ main {
   .col-4 {
     width: 100%;
     margin-bottom: 45px;
-    overflow-x: auto;
   }
 
   .col-6 {
     width: 100% !important;
     margin-bottom: 15px;
-    overflow-x: auto;
   }
 
   .tracking {
