@@ -4249,3 +4249,14 @@ th:hover svg path {
   margin-right: -10px;
 }
 
+
+@media screen and (max-width: 1700px){
+  .header-row > .col-5{
+    left: 54%;
+  }
+}
+
+  .sorted::after {
+      content: "";
+      background-image: url('iconamoon_sorting-left-duotone.svg');
+    }
