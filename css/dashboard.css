@@ -3691,7 +3691,7 @@ main {
 }
 
 @media screen and (max-width: 1800px) {
-  .campaigns {
+  .scroll {
     overflow-y: hidden;
     overflow-x: auto;
   }
