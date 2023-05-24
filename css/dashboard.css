@@ -987,7 +987,7 @@ table tbody tr th {
 }
 
 .table > tbody {
-  vertical-align: top;
+  vertical-align: middle;
   width: 100%;
 }
 
