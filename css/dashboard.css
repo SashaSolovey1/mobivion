@@ -975,15 +975,17 @@ table tbody tr th {
   border-color: var(--bs-table-border-color);
   border-collapse: separate;
   border-spacing: 0 17px;
-  line-height: 12px !important;
+  line-height: 15px !important;
 }
 
 .table > :not(caption) > * > * {
   padding: 0.5rem 0.7rem;
+  padding-left: 0 !important;
   background-color: var(--bs-table-bg);
   border-bottom-width: var(--bs-border-width);
   box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
   padding-right: 1rem;
+  vertical-align: top;
 }
 
 .table > tbody {
@@ -3197,7 +3199,7 @@ main {
 .bg-white-block {
   background: #ffffff;
   border-radius: 20px;
-  padding: 30px 20px;
+  padding: 34px 24px;
 }
 
 .bg-white-block > .d-flex {
@@ -4173,9 +4175,6 @@ main {
   overflow: hidden;
 }
 
-.campaigns-table thead tr th:first-child {
-  min-width: 103px;
-}
 
 .wrapper-activities {
   margin-right: 15px;
@@ -4189,12 +4188,34 @@ main {
   margin-right: -20.4px;
 }
 
+.campaigns-table thead tr th:first-child {
+  min-width: 200px;
+}
+
 .campaigns-table thead tr th:nth-child(2) {
   white-space: nowrap;
-  max-width: 50px;
-  min-width: 80px;
-
+  width: 60px;
+  min-width: 90px;
 }
+
+.campaigns-table thead tr th:nth-child(3) {
+  width: 307px;
+  min-width: 70px;
+}
+
+.campaigns-table thead tr th:nth-child(4) {
+  width: 40px;
+  min-width: 78px;
+}
+
+.campaigns-table thead tr th:nth-child(5) {
+  width: 200px;
+  min-width: 78px;
+}
+
+
+
+
 
 .campaigns-table tbody tr td {
   min-width: 50px;
@@ -4225,14 +4246,6 @@ th:hover svg path {
   color: #713EE6 !important; 
 }
 
-.campaigns-table thead tr th:nth-child(4) {
-  min-width: 60px;
-}
-
-.campaigns-table thead tr th:nth-child(5) {
-  min-width: 70px;
-}
-
 .table-container {
   padding-right: 28px !important;
 }
@@ -4256,12 +4269,21 @@ th:hover svg path {
   }
 }
 
-  .sorted::after {
-      content: "";
-      background-image: url('iconamoon_sorting-left-duotone.svg');
-      position: absolute;
-      right: -3px;
-    }
+.sorted::after {
+  content: "";
+  background-image: url('iconamoon_sorting-left-duotone.svg');
+  position: absolute;
+  right: -3px;
+}
+
 .header-dashboard{
-box-shadow: 13px 10px 10px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 13px 10px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+.campaigns-table-1 thead tr th:first-child {
+  max-width: 3px;
+}
+
+.campaigns-table-1 thead tr th:nth-child(2) {
+  min-width: 110px;
 }
