@@ -43,12 +43,20 @@
   margin-top: 1rem !important;
 }
 
+.mt-3-5 {
+  margin-top: 1.8rem !important;
+}
+
 .mt-4 {
   margin-top: 1.5rem !important;
 }
 
 .mt-5 {
   margin-top: 3rem !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
 }
 
 .mb-1 {
@@ -75,6 +83,10 @@
   margin-bottom: 6rem !important;
 }
 
+.ml--1 {
+  margin-left: -0.5rem !important;
+}
+
 .ml-1 {
   margin-left: 0.25rem !important;
 }
@@ -89,6 +101,10 @@
 
 .ml-4 {
   margin-left: 1.5rem !important;
+}
+
+.ml-4-5 {
+  margin-left: 2rem !important;
 }
 
 .ml-5 {
@@ -147,8 +163,12 @@
 }
 
 .my-4 {
-  margin-top: 1.5rem !important;
-  margin-bottom: 1.5rem !important;
+  margin-top: 1.6rem !important;
+  margin-bottom: 1.6rem !important;
+}
+
+.my-4-5 {
+  margin-top: 1.6;
 }
 
 .my-5 {
@@ -219,6 +239,11 @@
 .py-1 {
   padding-top: 8px !important;
   padding-bottom: 8px !important;
+}
+
+.py-1-5 {
+  padding-top: 9.7px !important;
+  padding-bottom: 11px !important;
 }
 
 .py-2 {
@@ -670,6 +695,10 @@
   /* 20px */
 }
 
+.fs-22 {
+  font-size: 1.35rem;
+}
+
 .fs-24 {
   font-size: 1.5rem;
   /* 24px */
@@ -911,6 +940,8 @@
 table {
   caption-side: bottom;
   border-collapse: collapse;
+  position: inherit;
+    height: 1px;
 }
 table thead tr {
   vertical-align: middle;
@@ -943,19 +974,22 @@ table tbody tr th {
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
   border-collapse: separate;
-  border-spacing: 0 20px;
+  border-spacing: 0 17px;
+  line-height: 15px !important;
 }
 
 .table > :not(caption) > * > * {
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 0.7rem;
+  padding-left: 0 !important;
   background-color: var(--bs-table-bg);
   border-bottom-width: var(--bs-border-width);
   box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
   padding-right: 1rem;
+  vertical-align: top;
 }
 
 .table > tbody {
-  vertical-align: inherit;
+  vertical-align: middle;
   width: 100%;
 }
 
@@ -1234,7 +1268,7 @@ body {
 }
 
 .col-6 {
-  width: 55%;
+  width: 47.6%;
 }
 
 .col-5 {
@@ -1242,7 +1276,9 @@ body {
 }
 
 .header-row > .col-5 {
-  width: 65%;
+  position: fixed;
+  left: 63%;
+  width: 700px;
 }
 
 .col-4 {
@@ -2907,9 +2943,8 @@ main {
 }
 .sidebar-list {
   height: 100%;
-  border-bottom: 1px solid #eef0f6;
   overflow-y: auto;
-  margin-top: 30px;
+  margin-top: 18px;
 }
 .sidebar-list__item {
   transition: all 0.33s;
@@ -2920,6 +2955,7 @@ main {
   padding-left: 16px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 6px;
 }
 .sidebar-list__item:last-child {
   margin-bottom: 24px;
@@ -2934,13 +2970,13 @@ main {
   fill: #713ee6;
 }
 .sidebar-list__item.active p {
-  color: #713ee6;
+  color: #713ee6 !important;
 }
 .sidebar-list__item:hover svg path {
-  fill: #713ee6;
+  fill: #713ee6 !important;
 }
 .sidebar-list__item:hover p {
-  color: #713ee6;
+  color: #713ee6 !important;
 }
 .sidebar-list__item:hover {
   background-color: rgba(113, 62, 230, 0.1);
@@ -3141,7 +3177,7 @@ main {
 .tracking {
   box-sizing: border-box;
   height: 166px;
-  width: 57.4%;
+  width: 54.4%;
 }
 .tracking .input-wrapper {
   width: 100%;
@@ -3163,16 +3199,18 @@ main {
 .bg-white-block {
   background: #ffffff;
   border-radius: 20px;
-  padding: 30px 20px;
+  padding: 34px 24px;
 }
 
 .bg-white-block > .d-flex {
   padding: 0 15px;
+  padding-right: 20px;
 }
 
 .bg-white-block > .row {
   padding: 0 10px;
   height: 94%;
+  padding-right: 20px;
 }
 
 .bg-grey-block {
@@ -3636,7 +3674,7 @@ main {
 
 .payments {
   height: 416px;
-  width: 100%;
+  width: 93.1%;
 }
 
 .campaigns {
@@ -3811,6 +3849,10 @@ main {
   .stats {
     overflow-x: hidden;
   }
+
+  .header-row > .col-5 {
+    width: 35% !important;
+  }
 }
 
 /* Modals */
@@ -3821,7 +3863,7 @@ main {
   right: -25px;
   width: 25px;
   height: 25px;
-  border-radius: 0 0 0 15px;
+  border-radius: 0 0 0 40px;
   background-color: #eef0f6;
   transform: rotate(90deg);
   z-index: 1;
@@ -3833,7 +3875,6 @@ main {
   right: -24px;
   width: 25px;
   height: 25px;
-  border-radius: 0 0 15px 0;
   background-color: white;
   transform: rotate(90deg);
 }
@@ -3889,7 +3930,7 @@ main {
   left: 0;
   height: 100%;
   box-sizing: border-box;
-  width: 248px;
+  width: 235px;
 }
 
 .container-fluid.collapsed .sidebar .sidebar-list__item p {
@@ -3899,12 +3940,8 @@ main {
   margin-left: 18px;
 }
 
-.container-fluid.collapsed .header-right {
-  width: 55%;
-}
-
 .container-fluid.collapsed .content-main {
-  margin-left: 260px;
+  margin-left: 244px;
 }
 
 .container-fluid.collapsed .content-main .header-dashboard .content-fluid {
@@ -3914,7 +3951,7 @@ main {
 }
 
 .container-fluid.collapsed .content-main .header-dashboard {
-  left: 242px;
+  left: 235px;
 }
 
 .container-fluid.collapsed .manager {
@@ -4138,6 +4175,115 @@ main {
   overflow: hidden;
 }
 
-.campaigns-table thead tr th:first-child {
-  min-width: 103px;
+
+.wrapper-activities {
+  margin-right: 15px;
 }
+
+.balance-text {
+  margin-right: 23px;
+}
+
+.campaign {
+  margin-right: -20.4px;
+}
+
+.campaigns-table thead tr th:first-child {
+  min-width: 200px;
+}
+
+.campaigns-table thead tr th:nth-child(2) {
+  white-space: nowrap;
+  width: 60px;
+  min-width: 90px;
+}
+
+.campaigns-table thead tr th:nth-child(3) {
+  width: 307px;
+  min-width: 70px;
+}
+
+.campaigns-table thead tr th:nth-child(4) {
+  width: 40px;
+  min-width: 78px;
+}
+
+.campaigns-table thead tr th:nth-child(5) {
+  width: 200px;
+  min-width: 78px;
+}
+
+
+
+.campaigns-table tbody tr td {
+  min-width: 50px;
+}
+
+.campaigns-table tbody tr td:first-child {
+  min-width: 190px;
+}
+
+.create-campaigns {
+  width: 244px;
+  height: 56px;
+}
+
+th svg path {
+  stroke: #A5A5A4;
+}
+
+th.sorted svg path {
+  stroke: #713EE6 !important; 
+}
+
+th:hover svg path {
+  stroke: #713EE6 !important; 
+}
+
+.sorted {
+  color: #713EE6 !important; 
+}
+
+.table-container {
+  padding-right: 28px !important;
+}
+
+.stats {
+  width: 28.8% !important;
+}
+
+.tracking > .bg-white-block {
+  padding-left: 10px;
+}
+
+.bg-white-block > .d-flex > .d-inline-block {
+  margin-right: -10px;
+}
+
+
+@media screen and (max-width: 1700px){
+  .header-row > .col-5{
+    left: 54%;
+  }
+}
+
+.sorted::after {
+  content: "";
+  background-image: url('iconamoon_sorting-left-duotone.svg');
+  position: absolute;
+  right: -3px;
+}
+
+.header-dashboard{
+  box-shadow: 13px 10px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+.campaigns-table-1 thead tr th:first-child {
+  max-width: 3px;
+}
+
+.campaigns-table-1 thead tr th:nth-child(2) {
+  min-width: 110px;
+}
+
+
