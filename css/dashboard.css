@@ -3041,7 +3041,8 @@ main {
   position: relative;
   text-align: start;
 }
-.campaigns-table thead tr th:hover {
+.campaigns-table thead tr th:hover,
+.campaigns-table-1 thead tr th:hover{
   color: #713ee6;
 }
 
@@ -4332,4 +4333,12 @@ th:hover svg path {
 
 .campaigns-table-1 thead tr th:nth-child(3) {
   min-width: 110px;
+}
+
+.campaigns-table-1 thead tr th {
+  color: #a5a5a4;
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+  text-align: start;
 }
