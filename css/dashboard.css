@@ -981,7 +981,6 @@ table tbody tr th {
 
 .table > :not(caption) > * > * {
   padding: 0.5rem 0.7rem;
-  padding-left: 0 !important;
   background-color: var(--bs-table-bg);
   border-bottom-width: var(--bs-border-width);
   box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
@@ -3204,6 +3203,7 @@ main {
 .bg-white-block > .d-flex {
   padding: 0 15px;
   padding-right: 20px;
+  padding-left:10px !important;
 }
 
 .bg-white-block > .row {
@@ -4266,7 +4266,6 @@ main {
 .campaigns-table tbody tr td,
 .campaigns-table tbody tr th {
   min-width: 50px;
-  padding-left: 20px !important;
 }
 
 .campaigns-table tbody tr td:first-child {
@@ -4341,4 +4340,5 @@ th:hover svg path {
 .ph-table thead tr th:nth-child(3) {
   min-width: 110px;
 }
+
 
