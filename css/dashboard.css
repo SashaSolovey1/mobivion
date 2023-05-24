@@ -4261,4 +4261,6 @@ th:hover svg path {
   .sorted::after {
       content: "";
       background-image: url('iconamoon_sorting-left-duotone.svg');
+      position: absolute;
+      right: -3px;
     }
