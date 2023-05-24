@@ -3689,6 +3689,18 @@ main {
   display: block;
 }
 
+@media screen and (max-width: 1800px) {
+  .campaigns {
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+
+  .payments {
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+}
+
 @media screen and (max-width: 1183px) {
   .wrapper-activities {
     display: none !important;
@@ -3790,7 +3802,7 @@ main {
   }
 
   .content-main {
-    margin-left: 0px !important;
+    margin-left: -10px !important;
   }
 
   .header-right {
@@ -3848,10 +3860,23 @@ main {
 
   .stats {
     overflow-x: hidden;
+    width: 100% !important;
   }
 
   .header-row > .col-5 {
     width: 35% !important;
+  }
+
+  .bg-white-block {
+    padding-bottom: 20px;
+  }
+
+  .content-main {
+    margin-bottom: 0 !important;
+  }
+
+  .statistics-items {
+    padding-left: 8px !important;
   }
 }
 
@@ -4249,7 +4274,7 @@ th:hover svg path {
 }
 
 .stats {
-  width: 28.8% !important;
+  width: 28.8%;
 }
 
 .tracking > .bg-white-block {
