@@ -986,12 +986,12 @@ table tbody tr th {
   border-bottom-width: var(--bs-border-width);
   box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
   padding-right: 1rem;
-  vertical-align: top;
+  vertical-align: center;
 }
 
 .table > tbody {
   vertical-align: middle;
-  width: 100%;
+  margin-right: 10px;
 }
 
 .table > thead {
@@ -3034,7 +3034,8 @@ main {
 .campaigns-table thead tr {
   vertical-align: top;
 }
-.campaigns-table thead tr th {
+.campaigns-table thead tr th,
+.campaigns-table-1 thead tr th {
   color: #a5a5a4;
   transition: all 0.3s;
   cursor: pointer;
@@ -3052,6 +3053,7 @@ main {
 .campaigns-table tbody tr {
   transition: all 0.3s;
   cursor: pointer;
+
 }
 .campaigns-table tbody tr:hover {
   background: #eef0f6;
@@ -3722,6 +3724,11 @@ main {
   .scroll{
    width: 50%; 
   }
+
+  .payments .scroll {
+    width: 100% !important;
+  }
+
   .content {
     display: flex;
     flex-direction: column;
@@ -3894,7 +3901,11 @@ main {
   .campaigns-grid .d-inline-block {
     position: absolute;
     right: 26px;
-    top: 260px;
+    top: 222px;
+  }
+
+  .scroll-button {
+    display: none
   }
 
 }
@@ -4261,6 +4272,7 @@ main {
 
 .campaigns-table tbody tr td {
   min-width: 50px;
+  padding-left: 20px !important;
 }
 
 .campaigns-table tbody tr td:first-child {
@@ -4324,22 +4336,15 @@ th:hover svg path {
   box-shadow: 13px 10px 10px -5px rgba(0, 0, 0, 0.1);
 }
 
-.campaigns-table-1 thead tr th:first-child {
-  min-width: 50px;
+.ph-table  thead tr th:first-child {
+  min-width: 90px !important;
 }
 
-.campaigns-table-1 thead tr th:nth-child(2) {
-  min-width: 94px;
+.ph-table  thead tr th:nth-child(2) {
+  min-width: 104px;
 }
 
-.campaigns-table-1 thead tr th:nth-child(3) {
+.ph-table thead tr th:nth-child(3) {
   min-width: 110px;
 }
 
-.campaigns-table-1 thead tr th {
-  color: #a5a5a4;
-  transition: all 0.3s;
-  cursor: pointer;
-  position: relative;
-  text-align: start;
-}
