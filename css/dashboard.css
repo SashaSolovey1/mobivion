@@ -3879,6 +3879,30 @@ main {
   .statistics-items {
     padding-left: 8px !important;
   }
+
+  .campaigns-grid {
+    display: grid !important;
+  }
+
+  .campaigns-btns {
+    grid-column: 1;
+    flex-direction: row;
+    margin-left: 0 !important;
+    padding-top: 24px;
+  }
+
+  .scroll-div {
+    display: flex !important;
+    grid-row: span 3;
+    grid-column: span 3;
+  }
+  
+  .campaigns-grid .d-inline-block {
+    position: absolute;
+    right: 26px;
+    top: 260px;
+  }
+
 }
 
 /* Modals */
