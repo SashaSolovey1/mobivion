@@ -3696,10 +3696,7 @@ main {
     overflow-x: auto;
   }
 
-  .payments {
-    overflow-y: hidden;
-    overflow-x: auto;
-  }
+
 }
 
 @media screen and (max-width: 1183px) {
