@@ -3818,6 +3818,10 @@ main {
   .stats {
     overflow-x: hidden;
   }
+
+  .header-row > .col-5 {
+    width: 35% !important;
+  }
 }
 
 /* Modals */
