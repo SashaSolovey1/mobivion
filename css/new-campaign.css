@@ -1276,7 +1276,9 @@ body {
 }
 
 .header-row > .col-5 {
-  width: 65%;
+  position: fixed;
+  left: 63%;
+  width: 700px;
 }
 
 .col-4 {
@@ -2940,7 +2942,6 @@ main {
 }
 .sidebar-list {
   height: 100%;
-  border-bottom: 1px solid #eef0f6;
   overflow-y: auto;
   margin-top: 18px;
 }
@@ -2953,6 +2954,7 @@ main {
   padding-left: 16px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 6px;
 }
 .sidebar-list__item:last-child {
   margin-bottom: 24px;
@@ -4231,12 +4233,8 @@ main {
   margin-left: 18px;
 }
 
-.container-fluid.collapsed .header-right {
-  width: 55%;
-}
-
 .container-fluid.collapsed .content-main {
-  margin-left: 260px;
+  margin-left: 248px;
 } 
 
 .container-fluid.collapsed .content-main .header-dashboard .content-fluid {
@@ -4246,7 +4244,7 @@ main {
 }
 
 .container-fluid.collapsed .content-main .header-dashboard {
-  left: 242px;
+  left: 235px;
 }
 
 .container-fluid.collapsed .manager {
@@ -4891,4 +4889,16 @@ main {
 
 .header-dashboard{
 box-shadow: 13px 10px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper-activities {
+  margin-right: 15px;
+}
+
+.balance-text {
+  margin-right: 23px;
+}
+
+.campaign {
+  margin-right: -20.4px;
 }
