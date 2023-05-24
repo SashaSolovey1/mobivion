@@ -4133,7 +4133,7 @@ main {
   right: -25px;
   width: 25px;
   height: 25px;
-  border-radius: 0 0 0 15px;
+  border-radius: 0 0 0 40px;
   background-color: #eef0f6;
   transform: rotate(90deg);
   z-index: 1;
@@ -4145,7 +4145,6 @@ main {
   right: -24px;
   width: 25px;
   height: 25px;
-  border-radius: 0 0 15px 0;
   background-color: white;
   transform: rotate(90deg);
 }
