@@ -4907,3 +4907,9 @@ box-shadow: 13px 10px 10px -5px rgba(0, 0, 0, 0.1);
 .campaign {
   margin-right: -20.4px;
 }
+
+@media screen and (max-width: 1700px){
+  .header-row > .col-5{
+    left: 54%;
+  }
+}
