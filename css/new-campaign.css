@@ -36,7 +36,7 @@
 }
 
 .mt-2 {
-  margin-top: 0.5rem !important;
+  margin-top: 0.85rem !important;
 }
 
 .mt-3 {
@@ -699,6 +699,11 @@
   /* 30px */
 }
 
+.fs-32 {
+  font-size: 1.975rem;
+  /* 30px */
+}
+
 .fs-36 {
   font-size: 2.25rem;
   /* 36px */
@@ -1260,7 +1265,7 @@ body {
 }
 
 .col-7 {
-  width: 53.6%;
+  width: 48%;
   overflow: hidden;
   border-radius: 20px;
   max-height: fit-content;
@@ -1286,7 +1291,7 @@ body {
 }
 
 .col-3 {
-  width: 38%;
+  width: 34.3%;
 }
 
 .col-2 {
