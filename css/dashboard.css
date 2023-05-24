@@ -4279,9 +4279,13 @@ th:hover svg path {
 }
 
 .campaigns-table-1 thead tr th:first-child {
-  max-width: 3px;
+  min-width: 50px;
 }
 
 .campaigns-table-1 thead tr th:nth-child(2) {
+  min-width: 90px;
+}
+
+.campaigns-table-1 thead tr th:nth-child(3) {
   min-width: 110px;
 }
