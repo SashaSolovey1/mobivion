@@ -3044,12 +3044,7 @@ main {
 .campaigns-table thead tr th:hover {
   color: #713ee6;
 }
-.campaigns-table thead tr th::after {
-  background-image: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.1665 3.25H10.8332M2.1665 6.5H7.58317M2.1665 9.75H4.33317' stroke='%23713EE6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-  width: 13px;
-  height: 13px;
-  display: inline-block;
-}
+
 .campaigns-table thead tr button {
   padding: 11px 15px;
 }
@@ -4292,7 +4287,7 @@ th:hover svg path {
 
 .sorted::after {
   content: "";
-  background-image: url('/img/iconamoon_sorting-left-duotone.svg');
+  background-image: url('data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.1665 3.25H10.8332M2.1665 6.5H7.58317M2.1665 9.75H4.33317' stroke='%23713EE6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A');
   position: absolute;
   right: 10px;
 }
