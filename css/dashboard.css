@@ -674,6 +674,10 @@
   /* 20px */
 }
 
+.fs-22 {
+  font-size: 1.35rem;
+}
+
 .fs-24 {
   font-size: 1.5rem;
   /* 24px */
@@ -3911,7 +3915,7 @@ main {
 }
 
 .container-fluid.collapsed .content-main {
-  margin-left: 248px;
+  margin-left: 244px;
 }
 
 .container-fluid.collapsed .content-main .header-dashboard .content-fluid {
@@ -4172,4 +4176,20 @@ main {
 .create-campaigns {
   width: 244px;
   height: 56px;
+}
+
+th svg path {
+  stroke: #A5A5A4;
+}
+
+th.sorted svg path {
+  stroke: #713EE6 !important; 
+}
+
+th:hover svg path {
+  stroke: #713EE6 !important; 
+}
+
+.sorted {
+  color: #713EE6 !important; 
 }

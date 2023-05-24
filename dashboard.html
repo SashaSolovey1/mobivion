@@ -721,7 +721,7 @@
 
         <main class="ml-2">
           <div class="row mt-2">
-            <div class="col-4">
+            <div class="col-4 fs-22">
               <h2>Dashboard</h2>
             </div>
           </div>
@@ -1343,7 +1343,29 @@
         }
       });
       
-      
+      var thElements = document.querySelectorAll('th.fs-14.fw-600');
+
+      for (var i = 0; i < thElements.length; i++) {
+
+        thElements[i].addEventListener('click', toggleSort);
+
+      }
+
+  
+      function toggleSort() {
+        if (this.classList.contains('sorted')) {
+          this.classList.remove('sorted');
+        } else {
+          removeSortedClassFromThElements();
+          this.classList.add('sorted');
+        }
+      }
+
+      function removeSortedClassFromThElements() {
+        for (var i = 0; i < thElements.length; i++) {
+          thElements[i].classList.remove('sorted');
+        }
+      }
       
     </script>
   </body>
