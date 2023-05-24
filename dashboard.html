@@ -18,7 +18,7 @@
         </div>
 
         <div class="sidebar-list align-items-center justify-content-end">
-          <div
+          <div id="dashboard-link"
             class="sidebar-list__item d-flex align-items-center justify-content-start active"
           >
             <svg
@@ -39,7 +39,7 @@
             <p class="text-lg font-semibold">Dashboard</p>
           </div>
 
-          <div
+          <div id="campaigns-link"
             class="sidebar-list__item d-flex align-items-center justify-content-start"
           >
             <svg
@@ -58,7 +58,7 @@
             <p>Campaigns</p>
           </div>
 
-          <div
+          <div id="statistics-link"
             class="sidebar-list__item d-flex align-items-center justify-content-start"
           >
             <svg
@@ -97,7 +97,7 @@
             <p>Statistics</p>
           </div>
 
-          <div
+          <div id="tracking-link"
             class="sidebar-list__item d-flex align-items-center justify-content-start"
           >
             <svg
@@ -124,7 +124,7 @@
             <p>Tracking</p>
           </div>
 
-          <div
+          <div id="payments-link"
             class="sidebar-list__item d-flex align-items-center justify-content-start"
           >
             <svg
@@ -143,7 +143,7 @@
             <p>Payments</p>
           </div>
 
-          <div
+          <div id="faq-link"
             class="sidebar-list__item d-flex align-items-center justify-content-start"
           >
             <svg
@@ -154,15 +154,15 @@
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M16.4465 0.379395H5.5538C2.55047 0.379395 0.107422 2.82244 0.107422 5.82577V20.041C0.107422 20.6791 0.488633 21.2548 1.07999 21.4961C1.28232 21.5817 1.48465 21.6206 1.68696 21.6206C2.09926 21.6206 2.49609 21.4572 2.79949 21.1538L4.93131 19.022C6.10621 17.847 7.66997 17.2013 9.33514 17.2013L16.4465 17.201C19.4499 17.201 21.8929 14.758 21.8929 11.7546V5.82586C21.8929 2.82253 19.4499 0.379483 16.4465 0.379483V0.379395ZM11.0157 14.2368C10.5878 14.2368 10.2377 13.8866 10.2377 13.4587C10.2377 13.0308 10.58 12.6806 11.0079 12.6806H11.0157C11.4437 12.6806 11.7938 13.0308 11.7938 13.4587C11.7938 13.8866 11.4437 14.2368 11.0157 14.2368ZM12.7273 9.07803C12.1361 9.47488 11.7781 10.1673 11.7781 10.9454C11.7781 11.3733 11.428 11.7234 11.0001 11.7234C10.5722 11.7234 10.222 11.3733 10.222 10.9454C10.222 9.64592 10.8366 8.46342 11.8638 7.78642C12.4162 7.41303 12.6807 6.7517 12.5251 6.09035C12.4006 5.53789 11.9416 5.07106 11.3813 4.94652C10.8912 4.82982 10.4087 4.93871 10.0275 5.24211C9.6463 5.54552 9.42833 5.98909 9.42833 6.47135C9.42833 6.89928 9.0782 7.2494 8.65027 7.2494C8.22234 7.2494 7.87222 6.89928 7.87222 6.47135C7.87222 5.51443 8.30015 4.61967 9.05495 4.02831C9.80192 3.42912 10.7821 3.21135 11.7314 3.42912C12.8751 3.69362 13.7776 4.60402 14.0421 5.74002C14.3379 7.0396 13.8244 8.34671 12.7273 9.07803Z"
-                fill="#4A4A49"
+              d="M16.4465 0.379395H5.5538C2.55047 0.379395 0.107422 2.82244 0.107422 5.82577V20.041C0.107422 20.6791 0.488633 21.2548 1.07999 21.4961C1.28232 21.5817 1.48465 21.6206 1.68696 21.6206C2.09926 21.6206 2.49609 21.4572 2.79949 21.1538L4.93131 19.022C6.10621 17.847 7.66997 17.2013 9.33514 17.2013L16.4465 17.201C19.4499 17.201 21.8929 14.758 21.8929 11.7546V5.82586C21.8929 2.82253 19.4499 0.379483 16.4465 0.379483V0.379395ZM11.0157 14.2368C10.5878 14.2368 10.2377 13.8866 10.2377 13.4587C10.2377 13.0308 10.58 12.6806 11.0079 12.6806H11.0157C11.4437 12.6806 11.7938 13.0308 11.7938 13.4587C11.7938 13.8866 11.4437 14.2368 11.0157 14.2368ZM12.7273 9.07803C12.1361 9.47488 11.7781 10.1673 11.7781 10.9454C11.7781 11.3733 11.428 11.7234 11.0001 11.7234C10.5722 11.7234 10.222 11.3733 10.222 10.9454C10.222 9.64592 10.8366 8.46342 11.8638 7.78642C12.4162 7.41303 12.6807 6.7517 12.5251 6.09035C12.4006 5.53789 11.9416 5.07106 11.3813 4.94652C10.8912 4.82982 10.4087 4.93871 10.0275 5.24211C9.6463 5.54552 9.42833 5.98909 9.42833 6.47135C9.42833 6.89928 9.0782 7.2494 8.65027 7.2494C8.22234 7.2494 7.87222 6.89928 7.87222 6.47135C7.87222 5.51443 8.30015 4.61967 9.05495 4.02831C9.80192 3.42912 10.7821 3.21135 11.7314 3.42912C12.8751 3.69362 13.7776 4.60402 14.0421 5.74002C14.3379 7.0396 13.8244 8.34671 12.7273 9.07803Z"
+              fill="#4A4A49"
               />
             </svg>
 
             <p>FAQ</p>
           </div>
 
-          <div
+          <div id="support-link"
             class="sidebar-list__item d-flex align-items-center justify-content-start"
           >
             <svg
@@ -185,7 +185,7 @@
 
           <div
             class="mx-4 mt-4 manager"
-            style="padding-top: 20px; border-top: 1px solid #e9e9e9"
+            style="padding-top: 17.7px; border-top: 1px solid #e9e9e9"
           >
             <div
               class="d-flex flex-column align-items-start justify-content-between"
@@ -194,11 +194,11 @@
                 <p class="fs-14 fw-400 leading-none text-gray-700">Manager</p>
                 <p class="fs-18 fw-600">Alexander Petrov</p>
               </div>
-              <div class="">
+              <div class="mb-1">
                 <p class="fs-14 fw-600">Telegram</p>
                 <p class="fs-12 fw-400">@manager1</p>
               </div>
-              <div class="">
+              <div class="mb-2">
                 <p class="fs-14 fw-600">Skype</p>
                 <p class="fs-12 fw-400">manager1@ProjectName.com</p>
               </div>
@@ -243,7 +243,7 @@
             <div class="d-flex col-5 header-right justify-content-end">
               <div class="d-flex justify-content-start space-x-8 align-items-center">
                 <div class="wrapper-activities d-flex align-items-center">
-                  <div class="campaign mr-4 d-flex flex-column">
+                  <div class="campaign d-flex flex-column">
                     <p class="title">Campaign</p>
                     <div class="d-flex justify-content-between">
                       <p class="fs-14">Cheking</p>
@@ -315,7 +315,7 @@
               </svg>
     
               <div class="color-black">
-              <p class="fs-14 fw-400">Balance:</p>
+              <p class="fs-14 fw-400 balance-text">Balance:</p>
               <p class="fs-18 fw-600">$ 9 922.23</p>
               </div>
             </button>
@@ -326,7 +326,7 @@
           </div>
         </div>
         <div class="wrapper-menu-activities d-flex align-items-center mb-4 justify-content-between">
-          <div class="campaign mr-4 d-flex flex-column">
+          <div class="campaign d-flex flex-column">
             <p class="title pb-2">Campaign</p>
             <div class="d-flex justify-content-between">
             <p class="fs-14">Cheking</p>
@@ -513,10 +513,10 @@
             fill="#4A4A49"
             />
           </svg>
-    
+          
           <p>FAQ</p>
           </div>
-    
+        
           <div
           class="sidebar-list__item d-flex align-items-center justify-content-start"
           >
@@ -644,7 +644,7 @@
                   class="d-flex justify-content-start space-x-8 align-items-center"
                 >
                   <div class="wrapper-activities d-flex align-items-center">
-                    <div class="campaign mr-4 d-flex flex-column">
+                    <div class="campaign d-flex flex-column">
                       <p class="title">Campaign</p>
                       <div class="d-flex">
                         <p class="fs-14 mr-2">Cheking</p>
@@ -688,7 +688,7 @@
                       </svg>
 
                       <div class="color-black">
-                        <p class="fs-14 fw-400">Balance:</p>
+                        <p class="fs-14 fw-400 balance-text">Balance:</p>
                         <p class="fs-18 fw-600">$ 9 922.23</p>
                       </div>
                     </button>
@@ -720,17 +720,17 @@
         </header>
 
         <main class="ml-2">
-          <div class="row mt-2">
-            <div class="col-4">
+          <div class="row mt-1">
+            <div class="col-4 fs-22">
               <h2>Dashboard</h2>
             </div>
           </div>
 
-          <div class="row mt-3">
+          <div class="row mt-2">
             <div class="col-6">
               <div class="campaigns bg-white-block">
                 <div
-                  class="d-flex space-x-4 align-items-center justify-content-between"
+                  class="d-flex space-x-4 align-items-center justify-content-between pl-0"
                 >
                   <p class="fs-24 fw-600 mr-4">Campaigns</p>
 
@@ -807,7 +807,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="row mt-3 scroll">
+                <div class="row scroll pl-0 ml--1 table-container">
                   <table class="table table-borderless campaigns-table">
                     <thead>
                       <tr>
@@ -818,7 +818,7 @@
                           Budget daily limit
                         </th>
                         <th class="fs-14 fw-600" scope="col">
-                          Used daily budget
+                            Used daily budget
                         </th>
                         <th class="fs-14 fw-600" scope="col">Status</th>
                         <th class="fs-14 fw-600" scope="col"></th>
@@ -827,7 +827,7 @@
                     <tbody>
                       <tr>
                         <td class="fs-16 fw-400" scope="row">
-                          Buy cialis inpage - US iOS dawd
+                          Buy cialis inpage - US iOS
                         </td>
                         <td class="fs-16 fw-400">$ 1 000.00</td>
                         <td class="fs-16 fw-400">$ 37.22</td>
@@ -879,7 +879,7 @@
                       </tr>
                       <tr>
                         <td class="fs-16 fw-400" scope="row">
-                          Buy cialis inpage - US iOS dawd
+                          Buy cialis inpage - US iOS
                         </td>
                         <td class="fs-16 fw-400">$ 1 000.00</td>
                         <td class="fs-16 fw-400">$ 37.22</td>
@@ -905,7 +905,7 @@
                       </tr>
                       <tr>
                         <td class="fs-16 fw-400" scope="row">
-                          Buy cialis inpage - US iOS dawd
+                          Buy cialis inpage - US iOS
                         </td>
                         <td class="fs-16 fw-400">$ 1 000.00</td>
                         <td class="fs-16 fw-400">$ 37.22</td>
@@ -937,11 +937,11 @@
 
             <div class="col-4">
               <div class="payments bg-white-block">
-                <div class="d-flex align-items-center justify-content-start ph-div">
+                <div class="d-flex align-items-center justify-content-start ph-div pl-0">
                   <p class="fs-24 fw-600 ph-text">Payments history</p>
-                  <div class="ml-4 mr-2">
+                  <div class="ml-4-5 mr-3">
                     <button
-                      class="btn fs-14 fw-600 btn-general d-flex align-items-center justify-content-center py-1 pl-2 pr-3 br-1"
+                      class="btn fs-14 fw-600 btn-general d-flex align-items-center justify-content-center py-1-5 pl-2 pr-3 br-1"
                     >
                       <svg
                         class="mr-1"
@@ -995,7 +995,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="row mt-3 scroll">
+                <div class="row scroll pl-0">
                   <table class="table table-borderless campaigns-table pr-5">
                     <thead>
                       <tr>
@@ -1104,14 +1104,14 @@
             </div>
           </div>
 
-          <div class="row my-5">
+          <div class="row my-4">
             <div class="col-4 stats">
               <div class="statistics bg-white-block">
                 <div
-                  class="d-flex row px-3 align-items-center justify-content-between"
+                  class="d-flex row align-items-center justify-content-between"
                 >
                   <p class="fs-24 fw-600">Statistics</p>
-                  <div class="d-inline-block mr-5">
+                  <div class="d-inline-block mr-3">
                     <a href="#">
                       <svg
                         width="20"
@@ -1221,9 +1221,9 @@
                 </div>
 
                 <div
-                  class="d-flex align-items-center justify-content-between mt-4"
+                  class="d-flex align-items-center justify-content-between mt-3-5 pr-0"
                 >
-                  <div class="input-wrapper mr-4">
+                  <div class="input-wrapper mr-2">
                     <input
                       type="text"
                       placeholder="https://postback.mobivion.com/?clickid={CLICK_ID}&moneyusd={PAYOUT}"
@@ -1231,7 +1231,7 @@
                   </div>
                   <div>
                     <button
-                      class="btn btn-general-light d-flex align-items-center justify-content-center px-3 py-3 br-2"
+                      class="btn btn-general-light d-flex align-items-center justify-content-center px-3 py-3 br-1"
                     >
                       <svg
                         width="18"
@@ -1317,29 +1317,95 @@
       const container = document.querySelector('.campaigns-btns');
       const scrollLeftButton = document.querySelector('.scroll-left');
       const scrollRightButton = document.querySelector('.scroll-right');
-    
+      
+      scrollLeftButton.style.display = 'none'; // Скрываем левую кнопку изначально
+      
       scrollLeftButton.addEventListener('click', () => {
         container.scrollLeft -= container.offsetWidth * 0.2;
       });
-    
+      
       scrollRightButton.addEventListener('click', () => {
         container.scrollLeft += container.offsetWidth * 0.2;
       });
-    
+      
       container.addEventListener('scroll', () => {
-        // Проверяем положение прокрутки и скрываем/показываем стрелки
         if (container.scrollLeft <= 0) {
-          scrollLeftButton.style.display = 'none';
+          scrollLeftButton.style.setProperty('display', 'none', 'important');
         } else {
-          scrollLeftButton.style.display = 'block';
+          scrollLeftButton.style.setProperty('display', 'block', 'important');
         }
-    
-        if (container.scrollLeft + container.offsetWidth >= container.scrollWidth) {
-          scrollRightButton.style.display = 'none';
+      
+        const isEndOfScroll = container.scrollLeft + container.offsetWidth >= container.scrollWidth - 1;
+        if (isEndOfScroll) {
+          scrollRightButton.style.setProperty('display', 'none', 'important');
         } else {
-          scrollRightButton.style.display = 'block';
+          scrollRightButton.style.setProperty('display', 'block', 'important');
         }
       });
+      
+      var thElements = document.querySelectorAll('th.fs-14.fw-600');
+
+      for (var i = 0; i < thElements.length; i++) {
+
+        thElements[i].addEventListener('click', toggleSort);
+
+      }
+
+  
+      function toggleSort() {
+        if (this.classList.contains('sorted')) {
+          this.classList.remove('sorted');
+        } else {
+          removeSortedClassFromThElements();
+          this.classList.add('sorted');
+        }
+      }
+
+      function removeSortedClassFromThElements() {
+        for (var i = 0; i < thElements.length; i++) {
+          thElements[i].classList.remove('sorted');
+        }
+      }
     </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var faqLink = document.getElementById("dashboard-link");
+        faqLink.addEventListener("click", function() {
+          window.location.href = "dashboard.html";
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function() {
+        var faqLink = document.getElementById("campaigns-link");
+        faqLink.addEventListener("click", function() {
+          window.location.href = "campaigns.html";
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function() {
+        var faqLink = document.getElementById("statistics-link");
+        faqLink.addEventListener("click", function() {
+          window.location.href = "statistics.html";
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function() {
+        var faqLink = document.getElementById("tracking-link");
+        faqLink.addEventListener("click", function() {
+          window.location.href = "tracking.html";
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function() {
+        var faqLink = document.getElementById("payments-link");
+        faqLink.addEventListener("click", function() {
+          window.location.href = "payments.html";
+        });
+      });
+
+
+    </script>
+
   </body>
 </html>
