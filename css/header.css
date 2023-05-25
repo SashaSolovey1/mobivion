@@ -160,3 +160,6 @@
 .profile:hover .profile-list {
   opacity: 1;
 }
+.balance-text {
+  margin-right: 23px;
+}
