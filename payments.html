@@ -974,11 +974,10 @@
 									</div>
 								</div>
 		
-								<table class="table table-borderless table-striped statistics-table">
+								<table class="table table-borderless table-striped statistics-table" id="sortable">
 									<thead>
 										<tr>
-											<th class="fs-14 fw-600" scope="col">Date <svg class="ml-2" width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.1665 1.25H9.83317M1.1665 4.5H6.58317M1.1665 7.75H3.33317" stroke="#713EE6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></th>
+											<th class="fs-14 fw-600" scope="col">Date</th>
 											<th class="fs-14 fw-600" scope="col">Sum</th>
 											<th class="fs-14 fw-600" scope="col">Method</th>
 											<th class="fs-14 fw-600" scope="col">Comment</th>
@@ -986,22 +985,22 @@
 									</thead>
 									<tbody>
 										<tr>
-											<th class="fs-16 fw-400" scope="row">1</th>
+											<td class="fs-16 fw-400" scope="row">1</td>
+											<td class="fs-16 fw-400">Markadasd</td>
+											<td class="fs-16 fw-400">Otto</td>
+											<td class="fs-16 fw-400">@mdo</td>
+		
+										</tr>
+										<tr>
+											<td class="fs-16 fw-400" scope="row">2</td>
 											<td class="fs-16 fw-400">Mark</td>
 											<td class="fs-16 fw-400">Otto</td>
 											<td class="fs-16 fw-400">@mdo</td>
 		
 										</tr>
 										<tr>
-											<th class="fs-16 fw-400" scope="row">1</th>
-											<td class="fs-16 fw-400">Mark</td>
-											<td class="fs-16 fw-400">Otto</td>
-											<td class="fs-16 fw-400">@mdo</td>
-		
-										</tr>
-										<tr>
-											<th class="fs-16 fw-400" scope="row">1</th>
-											<td class="fs-16 fw-400">Mark</td>
+											<td class="fs-16 fw-400" scope="row">3</td>
+											<td class="fs-16 fw-400">Markasda</td>
 											<td class="fs-16 fw-400">Otto</td>
 											<td class="fs-16 fw-400">@mdo</td>
 		
@@ -1282,6 +1281,117 @@
     });
   });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  var thElements = document.querySelectorAll('th.fs-14.fw-600');
+
+for (var i = 0; i < thElements.length; i++) {
+
+  thElements[i].addEventListener('click', toggleSort);
+
+}
+
+
+function toggleSort() {
+  if (this.classList.contains('sortedup')) {
+	this.classList.remove('sortedup');
+	this.classList.add('sorteddown');
+  } else {
+	removeSortedClassFromThElements();
+	this.classList.add('sortedup');
+	this.classList.remove('sorteddown');
+  }
+}
+
+function removeSortedClassFromThElements() {
+  for (var i = 0; i < thElements.length; i++) {
+	thElements[i].classList.remove('sortedup');
+	thElements[i].classList.remove('sorteddown');
+  }
+}
+
+
+
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const table = document.getElementById('sortable');
+    const headers = table.querySelectorAll('th');
+    const tableBody = table.querySelector('tbody');
+    const rows = tableBody.querySelectorAll('tr');
+
+    // Направление сортировки
+    const directions = Array.from(headers).map(function(header) {
+        return '';
+    });
+
+    // Преобразовать содержимое данной ячейки в заданном столбце
+    const transform = function(index, content) {
+        // Получить тип данных столбца
+        const type = headers[index].getAttribute('data-type');
+        switch (type) {
+            case 'number':
+                return parseFloat(content);
+            case 'string':
+            default:
+                return content;
+        }
+    };
+
+    const sortColumn = function(index) {
+        // Получить текущее направление
+        const direction = directions[index] || 'asc';
+
+        // Фактор по направлению
+        const multiplier = (direction === 'asc') ? 1 : -1;
+
+        const newRows = Array.from(rows);
+
+        newRows.sort(function(rowA, rowB) {
+            const cellA = rowA.querySelectorAll('td')[index].innerHTML;
+            const cellB = rowB.querySelectorAll('td')[index].innerHTML;
+
+            const a = transform(index, cellA);
+            const b = transform(index, cellB);    
+
+            switch (true) {
+                case a > b: return 1 * multiplier;
+                case a < b: return -1 * multiplier;
+                case a === b: return 0;
+            }
+        });
+
+        // Удалить старые строки
+        [].forEach.call(rows, function(row) {
+            tableBody.removeChild(row);
+        });
+
+        // Поменять направление
+        directions[index] = direction === 'asc' ? 'desc' : 'asc';
+
+        // Добавить новую строку
+        newRows.forEach(function(newRow) {
+            tableBody.appendChild(newRow);
+        });
+    };
+
+    [].forEach.call(headers, function(header, index) {
+        header.addEventListener('click', function() {
+            sortColumn(index);
+        });
+    });
+});
 
 </script>
 </body>
