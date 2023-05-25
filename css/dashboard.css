@@ -3640,10 +3640,6 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  .scroll{
-   width: 50%; 
-  }
-
   .payments .scroll {
     width: 100% !important;
   }
@@ -3802,6 +3798,7 @@ main {
 
   .campaigns-grid {
     display: grid !important;
+    width: 100%;
   }
 
   .campaigns-btns {
@@ -3813,8 +3810,8 @@ main {
 
   .scroll-div {
     display: flex !important;
-    grid-row: span 3;
-    grid-column: span 3;
+    overflow-x: auto;
+    width: 600px;
   }
   
   .campaigns-grid .d-inline-block {
@@ -3831,6 +3828,33 @@ main {
     height: 86.3% !important;
   }
 
+  ::-webkit-scrollbar {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  .campaigns-table thead tr th:first-child {
+    min-width: 200px !important;
+  }
+
+  .campaigns-table thead tr th:nth-child(2) {
+    min-width: 110px !important;
+  }
+
+  .campaigns .table-container {
+    width: 500px !important;
+  }
+
+  .ph-div > p {
+    white-space: nowrap;
+  }
 }
 
 /* Modals */
