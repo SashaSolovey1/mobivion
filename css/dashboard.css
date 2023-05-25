@@ -3811,7 +3811,7 @@ main {
   .scroll-div {
     display: flex !important;
     overflow-x: auto;
-    width: 600px;
+    width: 360px;
   }
   
   .campaigns-grid .d-inline-block {
@@ -3849,12 +3849,13 @@ main {
   }
 
   .campaigns .table-container {
-    width: 500px !important;
+    width: 400px !important;
   }
 
   .ph-div > p {
     white-space: nowrap;
   }
+
 }
 
 /* Modals */
