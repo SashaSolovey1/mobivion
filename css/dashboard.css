@@ -3638,6 +3638,9 @@ main {
     margin-right: 20px;
   }
 
+  .header-row > .col-5{
+    left: 10% !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -3782,7 +3785,7 @@ main {
   }
 
   .header-row > .col-5 {
-    width: 68% !important;
+    width: 86% !important;
   }
 
   .bg-white-block {
@@ -3867,6 +3870,10 @@ main {
 
   .ml-4-5 {
     margin-left: 1rem !important;
+  }
+
+  .payments-icon {
+    margin-left: 0 !important;
   }
 }
 
@@ -4252,7 +4259,7 @@ th:hover svg path {
 
 @media screen and (max-width: 1700px){
   .header-row > .col-5{
-    left: 27%;
+    left: 40%;
   }
 }
 
