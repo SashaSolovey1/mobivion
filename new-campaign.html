@@ -23,8 +23,14 @@
   right: 0;
 }
 
+p.current{
+  color: #713EE6;
+}
 
 
+p.clickable{
+  cursor: pointer;
+}
 
   .custom-checkbox.checked {
     border: 1px solid #713EE6;
@@ -784,7 +790,7 @@
             </div>
           </div>
 
-          <div class="row justify-content-between format-content">
+          <div class="row justify-content-between format-content" id="format_track">
             <div class="col-7 format">
               <div class="bg-white-block">
                 <h3 class="format-mt">Format</h3>
@@ -1166,56 +1172,56 @@
                 <div class="mt-5 user-info-block">
                   
                   <div class="d-flex mb-3 space-x-8">
-                    <p>Format</p>
+                    <p class="clickable" id="format_p">Format</p>
                     <span class="d-flex fs-16" id="formatSpan">
                       -
                     </span>
                   </div>
                     
                   <div class="d-flex mb-3 space-x-8">
-                    <p>General</p>
+                    <p class="clickable" id="general_p">General</p>
                     <span class="d-flex fs-16" id="general_block">
                      -</span>
                   </div>
                   <div class="d-flex mb-3 space-x-8">
-                    <p>Limits</p>
+                    <p class="clickable" id="limits_p">Limits</p>
                     <span class="fs-16" id="limit_block"
                       >-</span
                     >
                   </div>
                   <div class="d-flex mb-4 space-x-8">
-                    <p>Countries</p>
+                    <p class="clickable" id="countries_p">Countries</p>
                     <span id="countries_block" class="fs-16">-</span>
                   </div>
                   <div class="d-flex mb-4 space-x-8">
-                    <p>Browser & languages</p>
+                    <p class="clickable" id="browser_p">Browser & languages</p>
                     <span class="fs-16" id="browser_block">-</span>
                   </div>
                   <div class="d-flex mb-4 space-x-8">
-                    <p>Device</p>
+                    <p class="clickable" id="device_p">Device</p>
                     <span class="fs-16" id="device_block">-</span>
                   </div>
                   <div class="d-flex mb-4 space-x-8">
-                    <p>ISP</p>
+                    <p class="clickable" id="isp_p">ISP</p>
                     <span class="fs-16" id="isp_block">cable/wifi</span>
                   </div>
                   <div class="d-flex mb-4 space-x-8">
-                    <p>Schedule</p>
+                    <p class="clickable" id="schedule_p">Schedule</p>
                     <span class="fs-16">-</span>
                   </div>
                   <div class="d-flex mb-4 space-x-8">
-                    <p>Creative</p>
+                    <p class="clickable" id="creative_p">Creative</p>
                     <span class="fs-16">icon, image, title, message</span>
                   </div>
                   <div class="d-flex space-x-8">
-                    <p>Bid</p>
+                    <p class="clickable" id="bid_p">Bid</p>
                     <span class="fs-16" id="block_bid">-</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row mt-4-5">
+          <div class="row mt-4-5" id="general_track">
             <div class="col-7">
               <div class="format bg-white-block">
                 <h3 class="mt-1">General</h3>
@@ -1328,7 +1334,7 @@
                 </div>
               </div>
               
-          <div class="row mt-4-5">
+          <div class="row mt-4-5" id="limits_track">
             <div class="col-7">
               <div class="limits bg-white-block">
                 <h3 class="mt-1">Limits</h3>
@@ -1367,7 +1373,7 @@
               </div>
             </div>
           </div>
-          <div class="row mt-4-5">
+          <div class="row mt-4-5" id="countries_track">
             <div class="col-7">
               <div class="countries bg-white-block">
                 <h3 class="mt-1">Countries</h3>
@@ -1463,7 +1469,7 @@
             </div>
           </div>
         </div>
-          <div class="row mt-4-5">
+          <div class="row mt-4-5" id="browser_track">
             <div class="col-7">
               <div class="browser-languages bg-white-block">
                 <h3 class="mt-1">Browser & languages</h3>
@@ -1495,7 +1501,7 @@
               </div>
             </div>
           </div>
-          <div class="row mt-4-5">
+          <div class="row mt-4-5" id="device_track">
             <div class="col-7">
               <div class="device bg-white-block">
                 <h3 class="mt-1">Device</h3>
@@ -1525,7 +1531,7 @@
               </div>
             </div>
           </div>
-          <div class="row mt-4-5">
+          <div class="row mt-4-5" id="isp_track">
             <div class="col-7">
               <div class="isp bg-white-block">
                 <h3 class="mt-1">ISP</h3>
@@ -1546,7 +1552,7 @@
               </div>
             </div>
           </div>
-          <div class="row mt-4-5">
+          <div class="row mt-4-5" id="schedule_track">
             <div class="col-7">
               <div class="schedule bg-white-block">
                 <h3 class="mt-1">Schedule</h3>
@@ -1580,7 +1586,7 @@
               </div>
             </div>
           </div>
-          <div class="row mt-4-5">
+          <div class="row mt-4-5" id="creative_track">
             <div class="col-7 creative">
               <div class="bg-white-block">
                 <h3 class="mt-1">Creative</h3>
@@ -1693,7 +1699,7 @@
               </div>
             </div>
           </div>
-          <div class="row mt-4-5">
+          <div class="row mt-4-5" id="bid_track">
             <div class="col-7 bid">
               <div class="bg-white-block mb-3" id="bid_block">
                 <h3 class="mt-1">Bid</h3>
@@ -2169,6 +2175,53 @@ $("#bid").on("input", function() {
   var blockBid = $("#block_bid");
   var inputText = $(this).val();
   blockBid.text(inputText);
+});
+
+
+
+
+
+$(document).ready(function() {
+  $(window).on('scroll', function() {
+    var pairs = [
+      { trackId: 'format_track', pId: 'format_p' },
+      { trackId: 'general_track', pId: 'general_p' },
+      { trackId: 'limits_track', pId: 'limits_p' },
+      { trackId: 'countries_track', pId: 'countries_p' },
+      { trackId: 'browser_track', pId: 'browser_p' },
+      { trackId: 'device_track', pId: 'device_p' },
+      { trackId: 'isp_track', pId: 'isp_p' },
+      { trackId: 'schedule_track', pId: 'schedule_p' },
+      { trackId: 'creative_track', pId: 'creative_p' },
+      { trackId: 'bid_track', pId: 'bid_p' }
+    ];
+
+    var windowHeight = $(window).height();
+
+    pairs.forEach(function(pair) {
+      var track = $('#' + pair.trackId);
+      var p = $('#' + pair.pId);
+
+      var trackTop = track.offset().top;
+      var pTop = p.offset().top;
+
+      var isTrackInView = (trackTop >= $(window).scrollTop() && trackTop <= $(window).scrollTop() + windowHeight);
+      var isPInView = (pTop >= $(window).scrollTop() && pTop <= $(window).scrollTop() + windowHeight);
+
+      if (isTrackInView && isPInView) {
+        p.addClass('current');
+      } else {
+        p.removeClass('current');
+      }
+    });
+  });
+
+  $('[id$="_p"]').click(function() {
+    var targetId = $(this).attr('id').split('_p')[0] + '_track';
+    var targetOffset = $('#' + targetId).offset().top;
+
+    $('html, body').animate({ scrollTop: targetOffset }, 500);
+  });
 });
 
 
