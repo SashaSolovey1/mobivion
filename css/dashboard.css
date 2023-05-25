@@ -3637,6 +3637,7 @@ main {
   .btn-toggle {
     margin-right: 20px;
   }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -3781,7 +3782,7 @@ main {
   }
 
   .header-row > .col-5 {
-    width: 35% !important;
+    width: 68% !important;
   }
 
   .bg-white-block {
@@ -3856,6 +3857,9 @@ main {
     white-space: nowrap;
   }
 
+  .profile {
+    margin-left: 15px !important;
+  }
 }
 
 /* Modals */
@@ -4240,7 +4244,7 @@ th:hover svg path {
 
 @media screen and (max-width: 1700px){
   .header-row > .col-5{
-    left: 54%;
+    left: 27%;
   }
 }
 
