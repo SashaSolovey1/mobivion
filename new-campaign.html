@@ -2045,10 +2045,26 @@ function updateValues() {
 
 dailyBudgetInput.addEventListener("input", updateValues);
 totalBudgetInput.addEventListener("input", updateValues);
-frequencyCappingSelect.addEventListener("change", updateValues);
 
 
 
+
+function updateValuesSelect() {
+  var dailyBudgetValue = dailyBudgetInput.value;
+  var totalBudgetValue = totalBudgetInput.value;
+  var frequencyCappingValue = frequencyCappingSelect.value;
+  var selectedOption = frequencyCappingSelect.options[frequencyCappingSelect.selectedIndex];
+  var selectedText = selectedOption.textContent;
+
+  var content = "Daily budget limit: " + dailyBudgetValue + "$<br>";
+  content += "Total budget limit: " + totalBudgetValue + "$<br>";
+  content += "Frequency capping (per day): " + selectedText + " for 1 ip-address";
+
+  limitBlock.innerHTML = content;
+}
+
+
+$("#limit_select").on("change", updateValuesSelect);
 
 
 
@@ -2197,18 +2213,26 @@ $(document).ready(function() {
     ];
 
     var windowHeight = $(window).height();
+    var scrollTop = $(window).scrollTop();
+    var topTrackId = null;
+    var topOffset = null;
 
     pairs.forEach(function(pair) {
       var track = $('#' + pair.trackId);
-      var p = $('#' + pair.pId);
-
       var trackTop = track.offset().top;
-      var pTop = p.offset().top;
+      var trackHeight = track.outerHeight();
 
-      var isTrackInView = (trackTop >= $(window).scrollTop() && trackTop <= $(window).scrollTop() + windowHeight);
-      var isPInView = (pTop >= $(window).scrollTop() && pTop <= $(window).scrollTop() + windowHeight);
+      if (trackTop <= scrollTop && trackTop + trackHeight > scrollTop) {
+        if (topOffset === null || trackTop < topOffset) {
+          topTrackId = pair.trackId;
+          topOffset = trackTop;
+        }
+      }
+    });
 
-      if (isTrackInView && isPInView) {
+    pairs.forEach(function(pair) {
+      var p = $('#' + pair.pId);
+      if (pair.trackId === topTrackId) {
         p.addClass('current');
       } else {
         p.removeClass('current');
@@ -2223,6 +2247,7 @@ $(document).ready(function() {
     $('html, body').animate({ scrollTop: targetOffset }, 500);
   });
 });
+
 
 
 
