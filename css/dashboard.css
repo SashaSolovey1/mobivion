@@ -3860,6 +3860,14 @@ main {
   .profile {
     margin-left: 15px !important;
   }
+
+  .ph-text {
+    font-size: 20px;
+  }
+
+  .ml-4-5 {
+    margin-left: 1rem !important;
+  }
 }
 
 /* Modals */
