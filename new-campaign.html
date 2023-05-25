@@ -18,6 +18,14 @@
   </head>
 
   <style>
+#right_block {
+  position: fixed;
+  right: 0;
+}
+
+
+
+
   .custom-checkbox.checked {
     border: 1px solid #713EE6;
   }
@@ -783,7 +791,7 @@
                 <ul class="checkbox-list">
                   <li class="checkbox-list__item">
                     <label class="checkbox-list__label">
-                      <input type="radio" class="checkbox-list__input" name="payment-method"/>
+                      <input type="radio" value="Баннерная реклама" class="checkbox-list__input" name="payment-method"/>
                       <span class="checkbox-list__custom-checkbox"></span>
                       <svg
                         width="64"
@@ -868,7 +876,7 @@
                   </li>
                   <li class="checkbox-list__item">
                     <label class="checkbox-list__label">
-                      <input type="radio" class="checkbox-list__input" name="payment-method"/>
+                      <input type="radio" value="Поисковый трафик" class="checkbox-list__input" name="payment-method"/>
                       <span class="checkbox-list__custom-checkbox"></span>
 
                       <svg width="64" height="46" viewBox="0 0 64 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -913,7 +921,7 @@
                   </li>
                   <li class="checkbox-list__item">
                     <label class="checkbox-list__label">
-                      <input type="radio" class="checkbox-list__input" name="payment-method" />
+                      <input type="radio" value="Видео реклама" class="checkbox-list__input" name="payment-method" />
                       <span class="checkbox-list__custom-checkbox"></span>
 
                       <svg width="64" height="46" viewBox="0 0 64 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -940,7 +948,7 @@
                   </li>
                   <li class="checkbox-list__item">
                     <label class="checkbox-list__label">
-                      <input type="radio" class="checkbox-list__input" name="payment-method"/>
+                      <input type="radio" value="In-app реклама" class="checkbox-list__input" name="payment-method"/>
                       <span class="checkbox-list__custom-checkbox"></span>
 
                       <svg width="64" height="46" viewBox="0 0 64 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -968,7 +976,7 @@
                   </li>
                   <li class="checkbox-list__item">
                     <label class="checkbox-list__label">
-                      <input type="radio" class="checkbox-list__input" name="payment-method" />
+                      <input type="radio" value="Нативка" class="checkbox-list__input" name="payment-method" />
                       <span class="checkbox-list__custom-checkbox"></span>
 
                       <svg width="64" height="46" viewBox="0 0 64 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -997,7 +1005,7 @@
                   </li>
                   <li class="checkbox-list__item">
                     <label class="checkbox-list__label">
-                      <input type="radio" class="checkbox-list__input" name="payment-method"/>
+                      <input type="radio" value="Пуш" class="checkbox-list__input" name="payment-method"/>
                       <span class="checkbox-list__custom-checkbox"></span>
    
 <svg width="64" height="46" viewBox="0 0 64 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1039,7 +1047,7 @@
                   </li>
                   <li class="checkbox-list__item">
                     <label class="checkbox-list__label">
-                      <input type="radio" class="checkbox-list__input" name="payment-method"/>
+                      <input type="radio" value="Тизеры" class="checkbox-list__input" name="payment-method"/>
                       <span class="checkbox-list__custom-checkbox"></span>
 
                       <svg width="64" height="46" viewBox="0 0 64 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1074,7 +1082,7 @@
                   </li>
                   <li class="checkbox-list__item">
                     <label class="checkbox-list__label">
-                      <input type="radio" class="checkbox-list__input" name="payment-method"/>
+                      <input type="radio" value="Inpage Push" class="checkbox-list__input" name="payment-method"/>
                       <span class="checkbox-list__custom-checkbox"></span>
 
                       <svg width="64" height="46" viewBox="0 0 64 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1114,7 +1122,7 @@
                   </li>
                   <li class="checkbox-list__item">
                     <label class="checkbox-list__label">
-                      <input type="radio" class="checkbox-list__input" name="payment-method"/>
+                      <input type="radio" value="Попандеры" class="checkbox-list__input" name="payment-method"/>
                       <span class="checkbox-list__custom-checkbox"></span>
 
                       <svg width="64" height="46" viewBox="0 0 64 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1152,47 +1160,44 @@
               </div>
             </div>
 
-            <div class="col-3 d-flex content">
+            <div class="col-3 d-flex content" id="right_block">
               <div class="col-5 bg-grey-block mb-4" id="content_block">
                 <p class="fs-24 fw-600">Content</p>
                 <div class="mt-5 user-info-block">
                   
                   <div class="d-flex mb-3 space-x-8">
                     <p>Format</p>
-                    <span class="d-flex fs-16">
-                      Нативка
+                    <span class="d-flex fs-16" id="formatSpan">
+                      -
                     </span>
                   </div>
                     
                   <div class="d-flex mb-3 space-x-8">
                     <p>General</p>
-                    <span class="d-flex fs-16"
-                      >Name,
-                      https://postback.mobivion.com/?clickid={CLICK_ID}&moneyusd={PAYOUT}</span
-                    >
+                    <span class="d-flex fs-16" id="general_block">
+                     -</span>
                   </div>
                   <div class="d-flex mb-3 space-x-8">
                     <p>Limits</p>
-                    <span class="fs-16"
-                      >12.021123 $, Budget limit, Frequency capping (per
-                      day)</span
+                    <span class="fs-16" id="limit_block"
+                      >-</span
                     >
                   </div>
                   <div class="d-flex mb-4 space-x-8">
                     <p>Countries</p>
-                    <span class="fs-16">+32 contries</span>
+                    <span id="countries_block" class="fs-16">-</span>
                   </div>
                   <div class="d-flex mb-4 space-x-8">
                     <p>Browser & languages</p>
-                    <span class="fs-16">+3 browsers, +5 languages</span>
+                    <span class="fs-16" id="browser_block">-</span>
                   </div>
                   <div class="d-flex mb-4 space-x-8">
                     <p>Device</p>
-                    <span class="fs-16">+4 platform, +2 OS</span>
+                    <span class="fs-16" id="device_block">-</span>
                   </div>
                   <div class="d-flex mb-4 space-x-8">
                     <p>ISP</p>
-                    <span class="fs-16">cable/wifi</span>
+                    <span class="fs-16" id="isp_block">cable/wifi</span>
                   </div>
                   <div class="d-flex mb-4 space-x-8">
                     <p>Schedule</p>
@@ -1204,7 +1209,7 @@
                   </div>
                   <div class="d-flex space-x-8">
                     <p>Bid</p>
-                    <span class="fs-16">-</span>
+                    <span class="fs-16" id="block_bid">-</span>
                   </div>
                 </div>
               </div>
@@ -1216,7 +1221,7 @@
                 <h3 class="mt-1">General</h3>
 
                 <div class="input-container error">
-                  <input type="text" class="custom-input" placeholder="Name" />
+                  <input name="generalName" type="text" class="custom-input" placeholder="Name" />
                   <span class="error-message">Please enter Name</span>
                 </div>
 
@@ -1225,6 +1230,7 @@
                     type="text"
                     class="custom-input"
                     placeholder="?source_id={SOURCE_ID}"
+                    name="generalSource"
                   />
                   <div
                     class="urls-list d-flex flex-column-wrap align-items-center space-x-2-first"
@@ -1330,7 +1336,7 @@
                 <div class="d-flex pl-0 w-90-noimportant">
                   <div class="col-3 pl-0 custom-limit-div">
                     <div class="custom-input-top-label pl-0">
-                      <input type="text" id="budget-input" required="" />
+                      <input type="text" id="budget-input" required="" name="budget_limit"/>
                       <label for="budget-input" class="label"
                         >Budget Limit</label
                       >
@@ -1339,7 +1345,7 @@
                   </div>
                   <div class="col-5 pl-0 custom-daily-div">
                     <div class="custom-input-top-label">
-                      <input type="text" id="bubget-daily-input" required="" />
+                      <input type="text" id="bubget-daily-input" required=""  name="budget_daily_limit"/>
                       <label for="bubget-daily-input" class="label"
                         >Budget Daily Limit</label
                       >
@@ -1349,7 +1355,7 @@
                 </div>
 
                 <div class="select-wrapper br-2 mt-4 limits-selector">
-                  <select class="select2-default">
+                  <select class="select2-default" name="limit_select" id="limit_select">
                     <option value="">
                       Ignore and send as much traffic as possible
                     </option>
@@ -1367,10 +1373,10 @@
                 <h3 class="mt-1">Countries</h3>
                 <div class="input-container">
                   <div class="select-wrapper br-2 w-90">
-                    <select
+                    <select id="countries_select"
                       class="color-black select2"
                       name="states[]"
-                      multiple="multiple"
+                      multiple="multiple" data-placeholder="Countries"
                     >
                       <option value="1">Afghanistan</option>
                       <option value="2">Australia</option>
@@ -1464,59 +1470,26 @@
                 <div class="input-container">
                   <div class="select-wrapper br-2 browser-selector">
                     <select
+                      id="version_select"
                       class="color-black select2"
-                      name="states[]"
+                      name="browsers[]"
                       multiple="multiple"
+                      data-placeholder="Browsers"
                     >
                       <option value="1">Android</option>
                       <option value="2">Opera</option>
+                      <option value="2">Chrome</option>
                     </select>
                   </div>
                 </div>
-                <div
-                  class="row d-flex w-60-noimportant align-items-center justify-content-between"
-                >
-                  <p>Opera</p>
-                  <svg
-                    width="18"
-                    height="17"
-                    viewBox="0 0 18 17"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.56488 0.834952C1.63579 0.836102 1.70593 0.850539 1.7716 0.87737L16.6535 6.6025C16.7985 6.6582 16.9147 6.77025 16.9752 6.91309C17.0359 7.05606 17.0359 7.21755 16.9752 7.3604C16.9147 7.50337 16.7985 7.61555 16.6535 7.67112L1.7716 13.3917C1.62888 13.4512 1.46803 13.4503 1.32583 13.3892C1.18375 13.3283 1.07234 13.2124 1.01702 13.0679C0.961699 12.9234 0.967194 12.7627 1.03222 12.6224C1.09738 12.482 1.21646 12.374 1.36251 12.3229L14.8537 7.13453L1.36251 1.94614C1.19092 1.88456 1.05881 1.74517 1.00694 1.57039C0.954943 1.39561 0.989437 1.20665 1.09957 1.0614C1.20983 0.916128 1.38254 0.832015 1.56488 0.834952ZM16.4514 15.1501C16.6527 15.1547 16.8368 15.2647 16.9362 15.4398C17.0356 15.6151 17.0356 15.8296 16.9362 16.0048C16.8368 16.1801 16.6527 16.2901 16.4514 16.2947H1.56488C1.36339 16.2901 1.17929 16.1801 1.07989 16.0048C0.980488 15.8296 0.980488 15.6151 1.07989 15.4398C1.17929 15.2647 1.3634 15.1545 1.56488 15.1499L16.4514 15.1501Z"
-                      fill="#713EE6"
-                    />
-                  </svg>
-                  <div class="custom-input w-60-noimportant">
-                    <input type="text" placeholder="Browser version">
-                  </div>
-                </div>
-                <div
-                  class="row d-flex w-60-noimportant align-items-center justify-content-between mt-2"
-                >
-                  <p>Chrome</p>
-                  <svg
-                    width="18"
-                    height="17"
-                    viewBox="0 0 18 17"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.56488 0.834952C1.63579 0.836102 1.70593 0.850539 1.7716 0.87737L16.6535 6.6025C16.7985 6.6582 16.9147 6.77025 16.9752 6.91309C17.0359 7.05606 17.0359 7.21755 16.9752 7.3604C16.9147 7.50337 16.7985 7.61555 16.6535 7.67112L1.7716 13.3917C1.62888 13.4512 1.46803 13.4503 1.32583 13.3892C1.18375 13.3283 1.07234 13.2124 1.01702 13.0679C0.961699 12.9234 0.967194 12.7627 1.03222 12.6224C1.09738 12.482 1.21646 12.374 1.36251 12.3229L14.8537 7.13453L1.36251 1.94614C1.19092 1.88456 1.05881 1.74517 1.00694 1.57039C0.954943 1.39561 0.989437 1.20665 1.09957 1.0614C1.20983 0.916128 1.38254 0.832015 1.56488 0.834952ZM16.4514 15.1501C16.6527 15.1547 16.8368 15.2647 16.9362 15.4398C17.0356 15.6151 17.0356 15.8296 16.9362 16.0048C16.8368 16.1801 16.6527 16.2901 16.4514 16.2947H1.56488C1.36339 16.2901 1.17929 16.1801 1.07989 16.0048C0.980488 15.8296 0.980488 15.6151 1.07989 15.4398C1.17929 15.2647 1.3634 15.1545 1.56488 15.1499L16.4514 15.1501Z"
-                      fill="#713EE6"
-                    />
-                  </svg>
-                  <div class="custom-input w-60-noimportant">
-                    <input type="text" placeholder="Browser version">
-                  </div>
-                </div>
-
+                <div id="version_display">
+ 
+              </div>
                 <div class="select-wrapper br-2 w-90 mt-2">
-                  <select class="color-black select2-default">
-                    <option value="">Browser languages</option>
+                  <select class="color-black select2-default" id="language_select" name="languages[]" multiple="multiple" data-placeholder="Languages">
+                    <option value="1">Android</option>
+                    <option value="2">Opera</option>
+                    <option value="2">Chrome</option>
                   </select>
                 </div>
               </div>
@@ -1526,14 +1499,22 @@
             <div class="col-7">
               <div class="device bg-white-block">
                 <h3 class="mt-1">Device</h3>
-                <div class="select-wrapper br-2 w-90">
-                  <select class="color-grey select2-default">
-                    <option value disabled selected>Platforms</option>
+                <div class="select-wrapper br-2 w-90"> 
+                  <select class="color-grey select2-default" id="platform_select" name="platforms[]" multiple="multiple"  data-placeholder="Platform">
+                    <option value="1" >1</option>
+                    <option value="2" >2</option>
+                    <option value="3" >3</option>
+                    <option value="4" >4</option>
                   </select>
                 </div>
                 <div class="select-wrapper br-2 w-90">
-                  <select class="color-grey select2-default">
-                    <option value disabled selected>OS</option>
+                  <select class="color-grey select2-default" id="os_select" name="os[]" multiple="multiple"  data-placeholder="OS">
+                    <option value="0" >OS</option>
+                    <option value="1" >1</option>
+                    <option value="2" >2</option>
+                    <option value="3" >3</option>
+                    <option value="4" >4</option>
+                    <option value="5" >5</option>
                   </select>
                 </div>
                 <div class="select-wrapper br-2 w-90 ">
@@ -1549,8 +1530,12 @@
               <div class="isp bg-white-block">
                 <h3 class="mt-1">ISP</h3>
                 <div class="select-wrapper br-2 w-90">
-                  <select class="color-grey select2-default">
+                  <select class="color-grey select2-default" id="connection">
                     <option value disabled selected>Connection type</option>
+                    <option value>wifi/cable</option>
+                    <option value>Connection type</option>
+                    <option value>Connection type</option>
+                    <option value>Connection type</option>
                   </select>
                 </div>
                 <div class="select-wrapper br-2 w-90">
@@ -1712,7 +1697,7 @@
             <div class="col-7 bid">
               <div class="bg-white-block mb-3" id="bid_block">
                 <h3 class="mt-1">Bid</h3>
-                <input type="text" class="custom-input" placeholder="CPM" />
+                <input type="text" id="bid" name="bid" class="custom-input" placeholder="CPM" />
               </div>
             </div>
           </div>
@@ -1825,8 +1810,6 @@
 
       // initialState { [row]: [hours] }
       const state = {
-        0: [1, 2, 5, 10],
-        5: [4, 9, 10, 20],
       };
 
       // change callback
@@ -1968,6 +1951,226 @@
       window.location.href = "payments.html";
     });
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  var radios = document.getElementsByName("payment-method");
+var formatSpan = document.getElementById("formatSpan");
+
+function handleClick(event) {
+  var clickedRadio = event.target;
+  var parentLabel = clickedRadio.closest(".checkbox-list__label");
+  var radioText = parentLabel.querySelector(".checkbox-list__text").innerText;
+  formatSpan.innerText = radioText;
+}
+
+for (var i = 0; i < radios.length; i++) {
+  radios[i].addEventListener("click", handleClick);
+}
+
+
+
+
+
+
+
+
+var generalNameInput = document.getElementsByName("generalName")[0];
+var generalSourceInput = document.getElementsByName("generalSource")[0];
+var generalBlock = document.getElementById("general_block");
+
+generalNameInput.addEventListener("input", handleInputChange);
+generalSourceInput.addEventListener("input", handleInputChange);
+
+function handleInputChange() {
+  var nameValue = generalNameInput.value;
+  var sourceValue = generalSourceInput.value;
+  var combinedValue = nameValue + ",<br>" + sourceValue;
+  generalBlock.innerHTML = combinedValue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+var dailyBudgetInput = document.getElementById("bubget-daily-input");
+var totalBudgetInput = document.getElementById("budget-input");
+var frequencyCappingSelect = document.getElementById("limit_select");
+var limitBlock = document.getElementById("limit_block");
+var selectContainer = document.getElementById("select2-limit_select-container");
+
+function updateValues() {
+  var dailyBudgetValue = dailyBudgetInput.value;
+  var totalBudgetValue = totalBudgetInput.value;
+  var frequencyCappingValue = frequencyCappingSelect.value;
+  var selectedOption = frequencyCappingSelect.options[frequencyCappingSelect.selectedIndex];
+  var selectedText = selectedOption.textContent;
+
+  var content = "Daily budget limit: " + dailyBudgetValue + "$<br>";
+  content += "Total budget limit: " + totalBudgetValue + "$<br>";
+  content += "Frequency capping (per day): " + selectedText + " for 1 ip-address";
+
+  limitBlock.innerHTML = content;
+  selectContainer.textContent = selectedText;
+}
+
+dailyBudgetInput.addEventListener("input", updateValues);
+totalBudgetInput.addEventListener("input", updateValues);
+frequencyCappingSelect.addEventListener("change", updateValues);
+
+
+
+
+
+
+
+
+
+
+var countriesSelect = document.getElementById("countries_select");
+var countriesBlock = document.getElementById("countries_block");
+
+function countSelectedCountries() {
+  var selectedCountries = $(countriesSelect).val();
+  var count = selectedCountries.length;
+
+  var text = count === 1 ? "country" : "countries";
+  countriesBlock.textContent = "+" + count + " " + text;
+}
+
+$("#countries_select").on("change", countSelectedCountries);
+
+
+
+
+
+
+
+
+
+
+
+$("#version_select, #language_select").on("change", function() {
+  var versionDisplay = $("#version_display");
+  var browserBlock = $("#browser_block");
+
+  versionDisplay.empty();
+
+  var selectedBrowsers = $("#version_select").find("option:selected");
+  var selectedLanguages = $("#language_select").find("option:selected");
+  var selectedBrowsersCount = selectedBrowsers.length;
+  var selectedLanguagesCount = selectedLanguages.length;
+
+  if (selectedBrowsersCount > 0) {
+    var blockHTML = "";
+
+    selectedBrowsers.each(function() {
+      var optionValue = $(this).val();
+      var optionText = $(this).text();
+      var optionId = optionValue + "_version";
+      var optionName = optionValue + "_version";
+
+      blockHTML += '<div class="row d-flex w-60-noimportant align-items-center justify-content-between">' +
+                   '<p>' + optionText + '</p>' +
+                   '<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+                   '<path d="M1.56488 0.834952C1.63579 0.836102 1.70593 0.850539 1.7716 0.87737L16.6535 6.6025C16.7985 6.6582 16.9147 6.77025 16.9752 6.91309C17.0359 7.05606 17.0359 7.21755 16.9752 7.3604C16.9147 7.50337 16.7985 7.61555 16.6535 7.67112L1.7716 13.3917C1.62888 13.4512 1.46803 13.4503 1.32583 13.3892C1.18375 13.3283 1.07234 13.2124 1.01702 13.0679C0.961699 12.9234 0.967194 12.7627 1.03222 12.6224C1.09738 12.482 1.21646 12.374 1.36251 12.3229L14.8537 7.13453L1.36251 1.94614C1.19092 1.88456 1.05881 1.74517 1.00694 1.57039C0.954943 1.39561 0.989437 1.20665 1.09957 1.0614C1.20983 0.916128 1.38254 0.832015 1.56488 0.834952ZM16.4514 15.1501C16.6527 15.1547 16.8368 15.2647 16.9362 15.4398C17.0356 15.6151 17.0356 15.8296 16.9362 16.0048C16.8368 16.1801 16.6527 16.2901 16.4514 16.2947H1.56488C1.36339 16.2901 1.17929 16.1801 1.07989 16.0048C0.980488 15.8296 0.980488 15.6151 1.07989 15.4398C1.17929 15.2647 1.3634 15.1545 1.56488 15.1499L16.4514 15.1501Z" fill="#713EE6"></path>' +
+                   '</svg>' +
+                   '<div class="custom-input w-60-noimportant">' +
+                   '<input type="text" placeholder="Browser version" name="' + optionName + '" id="' + optionId + '">' +
+                   '</div>' +
+                   '</div>';
+    });
+
+    versionDisplay.append(blockHTML);
+  }
+
+  var browserBlockText = "";
+
+  if (selectedBrowsersCount > 0) {
+    browserBlockText += "+" + selectedBrowsersCount + " browsers";
+  }
+
+  if (selectedLanguagesCount > 0) {
+    if (selectedBrowsersCount > 0) {
+      browserBlockText += ", ";
+    }
+    browserBlockText += "+" + selectedLanguagesCount + " languages";
+  }
+
+  browserBlock.text(browserBlockText);
+});
+
+
+
+$("#platform_select, #os_select").on("change", function() {
+  var deviceBlock = $("#device_block");
+  
+  var selectedPlatforms = $("#platform_select").find("option:selected");
+  var selectedOS = $("#os_select").find("option:selected");
+  var selectedPlatformsCount = selectedPlatforms.length;
+  var selectedOSCount = selectedOS.length;
+  
+  var deviceBlockText = "";
+  
+  if (selectedPlatformsCount > 0) {
+    deviceBlockText += "+" + selectedPlatformsCount + " platform";
+    if (selectedPlatformsCount > 1) {
+      deviceBlockText += "s";
+    }
+  }
+  
+  if (selectedOSCount > 0) {
+    if (selectedPlatformsCount > 0) {
+      deviceBlockText += ", ";
+    }
+    deviceBlockText += "+" + selectedOSCount + " OS";
+    if (selectedOSCount > 1) {
+      deviceBlockText += "s";
+    }
+  }
+  
+  deviceBlock.text(deviceBlockText);
+});
+
+
+
+$("#connection").on("change", function() {
+  var ispBlock = $("#isp_block");
+  var selectedOption = $(this).find("option:selected");
+  var selectedOptionText = selectedOption.text();
+  ispBlock.text(selectedOptionText);
+});
+
+
+$("#bid").on("input", function() {
+  var blockBid = $("#block_bid");
+  var inputText = $(this).val();
+  blockBid.text(inputText);
+});
+
 
 
 </script>
