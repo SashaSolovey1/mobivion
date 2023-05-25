@@ -2198,6 +2198,8 @@ $("#bid").on("input", function() {
 
 
 $(document).ready(function() {
+  var headerHeight = 96; // Высота хедера
+
   $(window).on('scroll', function() {
     var pairs = [
       { trackId: 'format_track', pId: 'format_p' },
@@ -2213,13 +2215,13 @@ $(document).ready(function() {
     ];
 
     var windowHeight = $(window).height();
-    var scrollTop = $(window).scrollTop();
+    var scrollTop = $(window).scrollTop() + headerHeight;
     var topTrackId = null;
     var topOffset = null;
 
     pairs.forEach(function(pair) {
       var track = $('#' + pair.trackId);
-      var trackTop = track.offset().top;
+      var trackTop = track.offset().top -235;
       var trackHeight = track.outerHeight();
 
       if (trackTop <= scrollTop && trackTop + trackHeight > scrollTop) {
@@ -2241,8 +2243,11 @@ $(document).ready(function() {
   });
 
   $('[id$="_p"]').click(function() {
+    $('[id$="_p"]').removeClass('current'); // Remove 'current' class from all elements
+    $(this).addClass('current'); // Add 'current' class to the clicked element
+
     var targetId = $(this).attr('id').split('_p')[0] + '_track';
-    var targetOffset = $('#' + targetId).offset().top;
+    var targetOffset = $('#' + targetId).offset().top - headerHeight;
 
     $('html, body').animate({ scrollTop: targetOffset }, 500);
   });
