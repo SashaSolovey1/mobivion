@@ -3008,12 +3008,7 @@ main {
 .campaigns-table thead tr th:hover {
   color: #713ee6;
 }
-.campaigns-table thead tr th::after {
-  background-image: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.1665 3.25H10.8332M2.1665 6.5H7.58317M2.1665 9.75H4.33317' stroke='%23713EE6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-  width: 13px;
-  height: 13px;
-  display: inline-block;
-}
+
 .campaigns-table thead tr button {
   padding: 11px 15px;
 }
@@ -4697,4 +4692,39 @@ input.form-control {
 
 .campaign {
   margin-right: -20.4px;
+}
+
+.sorteddown::after {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.1665 3.25H10.8332M2.1665 6.5H7.58317M2.1665 9.75H4.33317' stroke='%23713EE6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  position: absolute;
+  margin-left: 5px;
+  width: 13px;
+  height: 13px;
+  margin-top: 3px;
+}
+
+.sortedup::after {
+  content: "";
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg' transform='scale(1,-1)'%3e%3cpath d='M2.16602 3.25H10.8327M2.16602 6.5H7.58268M2.16602 9.75H4.33268' stroke='%23713EE6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");  position: absolute;
+  margin-left: 5px;
+  width: 13px;
+  height: 13px;
+  margin-top: 3px;
+}
+
+.sorteddown {
+  color: #713EE6 !important; 
+}
+
+.sortedup {
+  color: #713EE6 !important; 
+}
+
+th.sorteddown svg path {
+  stroke: #713EE6 !important; 
+}
+
+th.sortedup svg path {
+  stroke: #713EE6 !important; 
 }
