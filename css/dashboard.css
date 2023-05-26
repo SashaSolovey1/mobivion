@@ -3489,8 +3489,6 @@ main {
     overflow-y: hidden;
     overflow-x: scroll;
   }
-
-
 }
 
 @media screen and (max-width: 1183px) {
@@ -3659,10 +3657,6 @@ main {
   .stats {
     overflow-x: hidden;
     width: 100% !important;
-  }
-
-  .header-row > .col-5 {
-    width: 86% !important;
   }
 
   .bg-white-block {
@@ -3976,12 +3970,6 @@ th:hover svg path {
   margin-right: -10px;
 }
 
-
-@media screen and (max-width: 1700px){
-  .header-row > .col-5{
-    left: 40%;
-  }
-}
 
 .sorteddown::after {
   content: "";

@@ -163,3 +163,19 @@
 .balance-text {
   margin-right: 23px;
 }
+
+.profile {
+  margin-left: 7px !important;
+}
+
+@media screen and (max-width: 1700px){
+  .header-row > .col-5{
+    left: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-row > .col-5 {
+    width: 86% !important;
+  }
+}
