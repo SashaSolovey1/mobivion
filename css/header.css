@@ -110,6 +110,7 @@
 .campaign {
   margin-right: -20.4px;
 }
+
 .profile-list {
   position: absolute;
   left: 586px;
@@ -166,6 +167,79 @@
 
 .profile {
   margin-left: 7px !important;
+}
+
+.wrapper-menu-activities .title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1d1d1b;
+}
+
+.wrapper-menu-activities .campaign div > .active {
+  color: #31a59e;
+}
+
+.wrapper-menu-activities .campaign div > p {
+  color: #a5a5a4;
+}
+
+.campaigns-list {
+  overflow-x: auto;
+}
+
+.wrapper-menu-activities .spend-menu div > p {
+  color: #212529;
+}
+
+.wrapper-menu-activities .spend-menu {
+  border-left: 2px solid #f1ecfc;
+}
+
+.spend-menu {
+  padding-left: 24px !important;
+  margin-right: 3px !important;
+}
+
+.create-campaigns-menu {
+  margin-bottom: 30px;
+  width: 200px !important;
+  padding-left: 10px !important;
+}
+
+.create-campaigns-menu svg {
+  padding-right: 10px !important;
+}
+
+.payment > .col-7 {
+  overflow: auto;
+}
+
+.user-info-block {
+  min-width: 320px !important;
+  margin-top: 35px;
+  overflow-x: auto;
+  width: 90%;
+}
+
+.extra-payment {
+  min-width: 210px !important;
+}
+
+.text-row {
+  display: flex;
+  width: 100%;
+  overflow-x: visible;
+}
+
+.wrapper-menu-activities {
+  margin-right: 32px;
+}
+
+.profile-info {
+  height: 174px;
+  width: 35%;
+  margin-left: 0px !important;
 }
 
 @media screen and (max-width: 1700px){
