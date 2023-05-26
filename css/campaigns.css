@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import "header.css";
 @import "sidebar.css";
+@import "table.css";
 /* Utils */
 .bg-white {
   background: #ffffff;
@@ -2787,65 +2788,6 @@ main {
   position: absolute;
   right: 0;
   z-index: 9999;
-}
-
-.campaigns-btns::-webkit-scrollbar {
-  display: none;
-}
-.campaigns-btns button {
-  padding: 8px 19px;
-  line-height: 14px;
-}
-.campaigns-table thead tr {
-  vertical-align: top;
-}
-.campaigns-table thead tr th {
-  color: #a5a5a4;
-  transition: all 0.3s;
-  cursor: pointer;
-  position: relative;
-  text-align: start;
-}
-.campaigns-table thead tr th:last-child {
-  text-align: center;
-}
-.campaigns-table thead tr th:hover {
-  color: #713ee6;
-}
-
-.campaigns-table thead tr button {
-  padding: 11px 15px;
-}
-.campaigns-table tbody tr {
-  transition: all 0.3s;
-  cursor: pointer;
-}
-.campaigns-table tbody tr:hover {
-  background: #eef0f6;
-  border-radius: 50px;
-}
-
-.campaigns-table tbody tr td:first-child {
-  padding-left: 22px;
-}
-
-.campaigns-table tbody tr:hover td:first-child {
-  border-top-left-radius: 14px;
-  border-bottom-left-radius:  14px;
-}
-
-.campaigns-table tbody tr:hover td:last-child {
-  border-top-right-radius: 14px;
-  border-bottom-right-radius:  14px;
-}
-
-.campaigns-list button {
-  border: 1px solid #e1def4;
-  transition: all 0.3s;
-  padding: 11px 19px;
-}
-.campaigns-list button:hover {
-  border: 1px solid #713ee6;
 }
 
 .restore-btn {

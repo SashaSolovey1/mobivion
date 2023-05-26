@@ -1,0 +1,73 @@
+.table::-webkit-scrollbar {
+  display: none;
+}
+.table-btns button {
+  padding: 8px 19px;
+  line-height: 14px;
+}
+.table-borderless thead tr {
+  vertical-align: top;
+}
+.table-borderless thead tr th {
+  color: #a5a5a4;
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+  text-align: start;
+}
+.table-borderless thead tr th:last-child {
+  text-align: center;
+}
+.table-borderless thead tr th:hover {
+  color: #713ee6;
+}
+
+.table-borderless thead tr button {
+  padding: 11px 15px;
+}
+.table-borderless tbody tr {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.table-borderless tbody tr:hover {
+  background: #eef0f6;
+  border-radius: 50px;
+}
+
+.table-borderless tbody tr td:first-child {
+  padding-left: 22px;
+}
+
+.table-borderless tbody tr:hover td:first-child {
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+}
+
+.table-borderless tbody tr:hover td:last-child {
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.table-btns button {
+  border: 1px solid #e1def4;
+  transition: all 0.3s;
+  padding: 11px 19px;
+}
+.table-btns button:hover {
+  border: 1px solid #713ee6;
+}
+
+.table-btns button {
+  border: 1px solid #e1def4;
+  transition: all 0.3s;
+  padding: 11px 19px;
+}
+.table-btns button:hover {
+  border: 1px solid #713ee6;
+}
+
+.table-btns {
+  white-space: nowrap;
+  position: relative;
+  overflow-x: hidden;
+}

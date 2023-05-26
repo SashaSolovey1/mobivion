@@ -4002,10 +4002,6 @@ main {
   padding-left: 8px !important;
 }
 
-.table > thead > tr > th:first-child {
-  padding-left: 20px;
-}
-
 .table > tbody > tr > th:first-child {
   padding-left: 20px;
 }
