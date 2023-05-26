@@ -733,37 +733,37 @@ color: #713EE6;
 				</div>
 			  </header>
 		<main class="main-content">
-			<div class="row my-3 align-items-center statistics">
+			<div class="row my-3 align-items-center justify-content-center statistics">
 				<div class="col-9">
 					<h2>Statistics</h2>
 				</div>
 				<div class="col-12">
-					<div class="d-flex space-x-4 align-items-center campaigns-list bg-gray-300">
-						<button class="btn fs-14 fw-600 bg-white border br-2">
-							All
+					<div class="d-flex space-x-4 align-items-center ml-6 table-btns bg-gray-300">
+						<button class="btn fs-14 fw-600 bg-white border br-1">
+							Date
 						</button>
-						<button class="btn fs-14 fw-600 bg-white border br-2">
-							All
+						<button class="btn fs-14 fw-600 bg-white border br-1">
+							Hours
 						</button>
-						<button class="btn fs-14 fw-600 bg-white border br-2">
-							All
+						<button class="btn fs-14 fw-600 bg-white border br-1">
+							Campaigns
 						</button>
-						<button class="btn fs-14 fw-600 bg-white border br-2">
-							All
+						<button class="btn fs-14 fw-600 bg-white border br-1">
+							Geos
 						</button>
-						<button class="btn fs-14 fw-600 bg-white border br-2">
-							All
+						<button class="btn fs-14 fw-600 bg-white border br-1">
+							Sources
 						</button>
-						<button class="btn fs-14 fw-600 bg-white border br-2">
-							All
+						<button class="btn fs-14 fw-600 bg-white border br-1">
+							Zones
 						</button>
 					</div>
 				</div>
 
 			</div>
 			<div class="col-12 bg-white-block">
-				<div class="row">
-					<div class="filters d-flex align-items-center justify-content-between space-x-2">
+				<div class="row pl-1">
+					<div class="filters d-flex align-items-center justify-content-between space-x-4">
 
 						<div class="searchbar br-1 fs-14 border border-color-grey">
 							<div class="searchbar-wrapper">
@@ -1181,107 +1181,138 @@ color: #713EE6;
 
   var thElements = document.querySelectorAll('th.fs-14.fw-600');
 
-for (var i = 0; i < thElements.length; i++) {
+	for (var i = 0; i < thElements.length; i++) {
 
-  thElements[i].addEventListener('click', toggleSort);
+	thElements[i].addEventListener('click', toggleSort);
 
-}
-
-
-function toggleSort() {
-  if (this.classList.contains('sortedup')) {
-	this.classList.remove('sortedup');
-	this.classList.add('sorteddown');
-  } else {
-	removeSortedClassFromThElements();
-	this.classList.add('sortedup');
-	this.classList.remove('sorteddown');
-  }
-}
-
-function removeSortedClassFromThElements() {
-  for (var i = 0; i < thElements.length; i++) {
-	thElements[i].classList.remove('sortedup');
-	thElements[i].classList.remove('sorteddown');
-  }
-}
+	}
 
 
+	function toggleSort() {
+	if (this.classList.contains('sortedup')) {
+		this.classList.remove('sortedup');
+		this.classList.add('sorteddown');
+	} else {
+		removeSortedClassFromThElements();
+		this.classList.add('sortedup');
+		this.classList.remove('sorteddown');
+	}
+	}
+
+	function removeSortedClassFromThElements() {
+	for (var i = 0; i < thElements.length; i++) {
+		thElements[i].classList.remove('sortedup');
+		thElements[i].classList.remove('sorteddown');
+	}
+	}
 
 
 
- 
-document.addEventListener('DOMContentLoaded', function() {
-    const tables = document.querySelectorAll('table'); // Получаем все таблицы на странице
 
-    tables.forEach(function(table) {
-        const headers = table.querySelectorAll('th');
-        const tableBody = table.querySelector('tbody');
-        const rows = tableBody.querySelectorAll('tr');
 
-        // Направление сортировки
-        const directions = Array.from(headers).map(function(header) {
-            return '';
-        });
+	
+	document.addEventListener('DOMContentLoaded', function() {
+	const tables = document.querySelectorAll('table'); // Получаем все таблицы на странице
 
-        // Преобразовать содержимое данной ячейки в заданном столбце
-        const transform = function(index, content) {
-            // Получить тип данных столбца
-            const type = headers[index].getAttribute('data-type');
-            switch (type) {
-                case 'number':
-                    return parseFloat(content);
-                case 'string':
-                default:
-                    return content;
-            }
-        };
+	tables.forEach(function(table) {
+		const headers = table.querySelectorAll('th');
+		const tableBody = table.querySelector('tbody');
+		const rows = tableBody.querySelectorAll('tr');
 
-        const sortColumn = function(index) {
-            // Получить текущее направление
-            const direction = directions[index] || 'asc';
+		// Направление сортировки
+		const directions = Array.from(headers).map(function(header) {
+			return '';
+		});
 
-            // Фактор по направлению
-            const multiplier = (direction === 'asc') ? 1 : -1;
+		// Преобразовать содержимое данной ячейки в заданном столбце
+		const transform = function(index, content) {
+			// Получить тип данных столбца
+			const type = headers[index].getAttribute('data-type');
+			switch (type) {
+				case 'number':
+					return parseFloat(content);
+				case 'string':
+					default:
+						return content;
+				}
+			};
 
-            const newRows = Array.from(rows);
+			const sortColumn = function(index) {
+			// Получить текущее направление
+			const direction = directions[index] || 'asc';
 
-            newRows.sort(function(rowA, rowB) {
-                const cellA = rowA.querySelectorAll('td')[index].innerHTML;
-                const cellB = rowB.querySelectorAll('td')[index].innerHTML;
+			// Фактор по направлению
+			const multiplier = (direction === 'asc') ? 1 : -1;
 
-                const a = transform(index, cellA);
-                const b = transform(index, cellB);    
+			const newRows = Array.from(rows);
 
-                switch (true) {
-                    case a > b: return 1 * multiplier;
-                    case a < b: return -1 * multiplier;
-                    case a === b: return 0;
-                }
-            });
+			newRows.sort(function(rowA, rowB) {
+			const cellA = rowA.querySelectorAll('td')[index].innerHTML;
+			const cellB = rowB.querySelectorAll('td')[index].innerHTML;
+				const a = transform(index, cellA);
+				const b = transform(index, cellB);    
 
-            // Удалить старые строки
-            Array.from(rows).forEach(function(row) {
-                tableBody.removeChild(row);
-            });
+					switch (true) {
+						case a > b: return 1 * multiplier;
+						case a < b: return -1 * multiplier;
+						case a === b: return 0;
+					}
+				});
 
-            // Поменять направление
-            directions[index] = direction === 'asc' ? 'desc' : 'asc';
+				// Удалить старые строки
+				Array.from(rows).forEach(function(row) {
+					tableBody.removeChild(row);
+				});
 
-            // Добавить новую строку
-            newRows.forEach(function(newRow) {
-                tableBody.appendChild(newRow);
-            });
-        };
+				// Поменять направление
+				directions[index] = direction === 'asc' ? 'desc' : 'asc';
 
-        Array.from(headers).forEach(function(header, index) {
-            header.addEventListener('click', function() {
-                sortColumn(index);
-            });
-        });
-    });
-});
+				// Добавить новую строку
+				newRows.forEach(function(newRow) {
+					tableBody.appendChild(newRow);
+				});
+			};
 
-</script>
+			Array.from(headers).forEach(function(header, index) {
+				header.addEventListener('click', function() {
+					sortColumn(index);
+				});
+			});
+		});
+	});
+
+	</script>
+
+	<script>
+		const container = document.querySelector('.table-btns');
+		const scrollLeftButton = document.querySelector('.scroll-left');
+		const scrollRightButton = document.querySelector('.scroll-right');
+		
+		scrollLeftButton.style.setProperty('display', 'none', 'important');
+		
+		scrollLeftButton.addEventListener('click', () => {
+		container.scrollLeft -= container.offsetWidth * 0.2;
+		});
+		
+		scrollRightButton.addEventListener('click', () => {
+		container.scrollLeft += container.offsetWidth * 0.2;
+		});
+		
+		container.addEventListener('scroll', () => {
+		if (container.scrollLeft <= 0) {
+			scrollLeftButton.style.setProperty('display', 'none', 'important');
+		} else {
+			scrollLeftButton.style.setProperty('display', 'block', 'important');
+		}
+		
+		const isEndOfScroll = container.scrollLeft + container.offsetWidth >= container.scrollWidth - 1;
+		if (isEndOfScroll) {
+			scrollRightButton.style.setProperty('display', 'none', 'important');
+		} else {
+			scrollRightButton.style.setProperty('display', 'block', 'important');
+		}
+		});
+
+	</script>
 	</body>
 </html>

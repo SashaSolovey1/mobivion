@@ -963,7 +963,6 @@ table tbody tr th {
 .table > thead {
   vertical-align: top;
   width: 100%;
-
 }
 
 .table-group-divider {
@@ -1131,11 +1130,6 @@ table tbody tr th {
   -webkit-overflow-scrolling: touch;
 }
 
-.table > thead > tr > th:first-child,
-.table > tbody > tr > th:first-child {
-  padding-left: 20px !important;
-}
-
 @media (max-width: 575.98px) {
   .table-responsive-sm {
     overflow-x: auto;
@@ -1218,7 +1212,6 @@ body {
 
 .col-12 {
   width: 100%;
-
 }
 
 .col-11 {
@@ -1242,7 +1235,7 @@ body {
 }
 
 .col-6 {
-   width: 47.6%;
+  width: 47.6%;
 }
 
 .col-5 {
@@ -2731,7 +2724,6 @@ body {
   position: relative;
 }
 
-
 .content-main {
   display: flex;
   margin-left: 96px;
@@ -2968,7 +2960,7 @@ main {
   border: none;
   margin: 0;
   padding: 0;
-  color: #1D1D1B;
+  color: #1d1d1b;
   /* word-wrap: break-word; */
   outline: none;
   display: flex;
@@ -3537,7 +3529,7 @@ main {
   .logo-image.mobile {
     display: inline-block !important;
   }
-  
+
   .balance-btn {
     border: none !important;
   }
@@ -3578,7 +3570,7 @@ main {
   .multiply-selector {
     grid-column: span 4;
   }
-  
+
   .page-numbers {
     width: 100%;
   }
@@ -3617,7 +3609,7 @@ main {
   ::-webkit-scrollbar-track {
     background: transparent;
   }
-  
+
   ::-webkit-scrollbar-thumb {
     background: transparent;
   }
@@ -3754,24 +3746,23 @@ main {
   display: none;
 }
 
-
-.daterangepicker td.active, 
+.daterangepicker td.active,
 .daterangepicker td.active:hover {
   background-color: rgba(113, 62, 230, 0.2) !important;
   border-color: transparent;
-  color: #4A4A49 !important;
+  color: #4a4a49 !important;
 }
 
-.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+.select2-container--default
+  .select2-results__option--highlighted.select2-results__option--selectable {
   background-color: rgba(113, 62, 230, 0.1) !important;
-  color: #1D1D1B !important;
+  color: #1d1d1b !important;
 }
 
 .select2-container--default .select2-results__option--selected {
   background-color: white !important;
-  color: #713EE6 !important;
+  color: #713ee6 !important;
 }
-
 
 .select2-container--default .select2-search--dropdown .select2-search__field {
   display: none;
@@ -3854,7 +3845,7 @@ main {
   .select2-selection__rendered {
   color: #a5a5a4 !important;
   line-height: 36px !important;
-  color: #1D1D1B !important;
+  color: #1d1d1b !important;
 }
 
 .select2-container .select2-selection--single {
@@ -4001,7 +3992,7 @@ main {
 .vscomp-toggle-button {
   align-items: center;
   background-color: #fff;
-  border: 1px solid #EEF0F6 !important;
+  border: 1px solid #eef0f6 !important;
   border-radius: 8px;
   cursor: pointer;
   display: flex;
@@ -4010,9 +4001,8 @@ main {
   width: 100%;
 }
 
-
 .datapicker {
- padding-right: 5px !important;
+  padding-right: 5px !important;
 }
 
 .multiply-selector {
@@ -4040,10 +4030,10 @@ main {
   padding: 0.4rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
-  color: #1D1D1B;
+  color: #1d1d1b;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #EEF0F6;
+  border: 1px solid #eef0f6;
   border-radius: 8px;
   transition: none !important;
   min-width: 178px;
@@ -4061,7 +4051,7 @@ input.form-control {
   padding-left: 14px !important;
 }
 
-.select2-container--default .select2-results>.select2-results__options {
+.select2-container--default .select2-results > .select2-results__options {
   font-size: 14px !important;
 }
 
@@ -4091,19 +4081,19 @@ input.form-control {
 
 .vscomp-wrapper.multiple .vscomp-option.selected .checkbox-icon::after {
   transform: rotate(45deg) translate(1px, -3px) !important;
-    border-color: #713EE6 !important;
-    border-left-color: rgba(0,0,0,0) !important;
-    border-top-color: rgba(0,0,0,0) !important;
-    width: 50% !important;
+  border-color: #713ee6 !important;
+  border-left-color: rgba(0, 0, 0, 0) !important;
+  border-top-color: rgba(0, 0, 0, 0) !important;
+  width: 50% !important;
 }
 
 .select2-container--open > .selection > .select2-selection {
-  border: 1px solid #713EE6 !important;
+  border: 1px solid #713ee6 !important;
   border-radius: 8px !important;
 }
 
 .vscomp-wrapper.focused .vscomp-toggle-button {
-  border: 1px solid #713EE6 !important;
+  border: 1px solid #713ee6 !important;
   border-radius: 8px !important;
   box-shadow: none !important;
 }
@@ -4143,7 +4133,7 @@ input.form-control {
 }
 
 .searchbar.active {
-  border: 1px solid #713EE6 !important;
+  border: 1px solid #713ee6 !important;
   border-radius: 8px !important;
 }
 
@@ -4152,7 +4142,7 @@ input.form-control {
 }
 
 .datapicker-div::after {
-  content:  url(../img/arrow-down.svg);
+  content: url(../img/arrow-down.svg);
   position: absolute;
   top: 3.7px;
   right: 26px; /* Adjust the value as needed to position the arrow */
@@ -4160,12 +4150,15 @@ input.form-control {
   height: 0;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__arrow b {
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow
+  b {
   display: none;
 }
 
 .select2-container--default .select2-selection--single::after {
-  content:  url(../img/arrow-down.svg);
+  content: url(../img/arrow-down.svg);
   position: absolute;
   top: 7px;
   right: 26px; /* Adjust the value as needed to position the arrow */
@@ -4174,7 +4167,7 @@ input.form-control {
 }
 
 .select2-container--open .select2-selection--single::after {
-  content:  url(../img/arrow-up.svg);
+  content: url(../img/arrow-up.svg);
 }
 
 .overflow-x {
@@ -4182,28 +4175,27 @@ input.form-control {
 }
 
 .datapicker-div.arrow-up::after {
-	/* Стиль стрелки при появлении календаря */
-	content: url(../img/arrow-up.svg);
-	position: absolute;
-	top: 3.7px;
-	right: 26px;
-	width: 0;
-	height: 0;
+  /* Стиль стрелки при появлении календаря */
+  content: url(../img/arrow-up.svg);
+  position: absolute;
+  top: 3.7px;
+  right: 26px;
+  width: 0;
+  height: 0;
 }
 
 .datapicker-div.arrow-up > input {
-		outline: 1px solid #713EE6; 
+  outline: 1px solid #713ee6;
 }
 
 .campaigns-btns button {
-    padding: 8px 19px;
-    line-height: 14px;
+  padding: 8px 19px;
+  line-height: 14px;
 }
-
 
 .sorteddown::after {
   content: "";
- background-image: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.1665 3.25H10.8332M2.1665 6.5H7.58317M2.1665 9.75H4.33317' stroke='%23713EE6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.1665 3.25H10.8332M2.1665 6.5H7.58317M2.1665 9.75H4.33317' stroke='%23713EE6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
   position: absolute;
   margin-left: 5px;
   width: 13px;
@@ -4213,7 +4205,8 @@ input.form-control {
 
 .sortedup::after {
   content: "";
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg' transform='scale(1,-1)'%3e%3cpath d='M2.16602 3.25H10.8327M2.16602 6.5H7.58268M2.16602 9.75H4.33268' stroke='%23713EE6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");  position: absolute;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg' transform='scale(1,-1)'%3e%3cpath d='M2.16602 3.25H10.8327M2.16602 6.5H7.58268M2.16602 9.75H4.33268' stroke='%23713EE6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+  position: absolute;
   margin-left: 5px;
   width: 13px;
   height: 13px;
@@ -4221,22 +4214,26 @@ input.form-control {
 }
 
 .sorteddown {
-  color: #713EE6 !important; 
+  color: #713ee6 !important;
 }
 
 .sortedup {
-  color: #713EE6 !important; 
+  color: #713ee6 !important;
 }
 
 th.sorteddown svg path {
-  stroke: #713EE6 !important; 
+  stroke: #713ee6 !important;
 }
 
 th.sortedup svg path {
-  stroke: #713EE6 !important; 
+  stroke: #713ee6 !important;
 }
 
 .row .bg-white-block {
   padding-top: 15px !important;
   padding-left: 0px !important;
+}
+
+.table-borderless thead tr th:last-child {
+  text-align: center;
 }
