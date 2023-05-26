@@ -1883,16 +1883,41 @@ document.addEventListener('DOMContentLoaded', function() {
   radioLocalTime.addEventListener('change', function() {
     if (radioLocalTime.checked) {
       timeZoneSelect.disabled = true;
-      handleStateChange();
+      handleStateChangeSelect();
     }
   });
 
   radioUTC.addEventListener('change', function() {
     if (radioUTC.checked) {
       timeZoneSelect.disabled = false;
-      handleStateChange();
+      handleStateChangeSelect();
     }
   });
+
+  function handleStateChangeSelect() {
+  var totalHours = 0;
+  var nowState = document.getElementById("form-name").value;
+  var nowState = JSON.parse(nowState);
+  for (var key in nowState) {
+  if (Array.isArray(nowState[key])) {
+    totalHours += nowState[key].length;
+  }
+}
+
+
+console.log(totalHours);
+  var scheduleBlock = document.getElementById("schedule_block");
+  if (scheduleBlock) {
+    // Вызываем другую функцию и передаем в нее значение totalHours
+    formatTime(totalHours);
+  }
+}
+
+
+
+
+  $("#time_zone").on("change", handleStateChangeSelect);
+
 });
 
 
