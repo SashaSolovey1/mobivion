@@ -544,6 +544,7 @@
 .d-flex {
   display: flex !important;
   width: auto;
+  word-break: break-all;
 }
 
 .d-inline-flex {
@@ -4506,3 +4507,4 @@ main {
   padding-bottom: 5px !important;
   margin-bottom: 5px;
 }
+
