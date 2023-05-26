@@ -3725,10 +3725,6 @@ main {
   .back-link {
     display: block !important;
   }
-
-  .color-black .fs-14 {
-    font-size: 1em !important;
-  }
   
   .tracking-inside {
     width: 100% !important;
@@ -3743,9 +3739,6 @@ main {
     padding: 0;
   }
 
-  .color-black p:first-child {
-    padding-left: 26px;
-  }
 
   .tab-content {
     margin: 0 !important;
@@ -3800,6 +3793,18 @@ main {
   .datapicker {
     grid-row: 3;
     grid-column: span 4;
+  }
+
+  ::-webkit-scrollbar {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
   }
 }
 

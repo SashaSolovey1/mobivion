@@ -3652,11 +3652,6 @@ main {
     margin-left: 0px !important;
   }
 
-  .color-black p:first-child {
-    padding-left: 26px;
-    font-size: 1em !important;
-  }
-
   .col-3 {
     padding: 0 0px;
   }
@@ -3667,6 +3662,18 @@ main {
 
   .table {
     min-width: 1671px !important;
+  }
+
+  ::-webkit-scrollbar {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
   }
 }
 
@@ -3726,11 +3733,6 @@ main {
 
 .container-fluid.collapsed .date {
   margin-top: 160px !important;
-}
-
-.menu-balance-btn {
-  padding-right: 32px !important;
-  padding-left: 24px !important;
 }
 
 .wrapper-menu-activities .title {

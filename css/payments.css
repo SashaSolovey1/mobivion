@@ -3681,10 +3681,6 @@ main {
     padding: 0;
   }
 
-  .color-black p:first-child {
-    padding-left: 26px;
-  }
-
   .tab-content {
     margin: 0 !important;
   }
@@ -3777,6 +3773,18 @@ main {
 
   .custom-input-top-label.w-50 {
     width: auto !important;
+  }
+
+  ::-webkit-scrollbar {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
   }
 }
 

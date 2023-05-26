@@ -3925,6 +3925,18 @@ main {
   .browser-languages .input-container {
     margin-bottom: 5px;
   }
+
+  ::-webkit-scrollbar {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
 }
 
 /* Modals */
@@ -3997,11 +4009,6 @@ main {
 .container-fluid.collapsed .content-main {
   margin-left: 248px;
 } 
-
-.menu-balance-btn {
-  padding-right: 32px !important;
-  padding-left: 24px !important;
-}
 
 .wrapper-menu-activities .title {
   font-style: normal;

@@ -3716,10 +3716,6 @@ main {
     padding: 0;
   }
 
-  .color-black p:first-child {
-    padding-left: 26px;
-  }
-
   .tab-content {
     margin: 0 !important;
   }
@@ -3759,6 +3755,18 @@ main {
 
   .col-3 {
     padding: 0 0px;
+  }
+
+  ::-webkit-scrollbar {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
   }
 }
 

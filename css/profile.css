@@ -3761,6 +3761,18 @@ main {
     margin-left: 0px !important;
     margin-top: 24px;
   }
+
+  ::-webkit-scrollbar {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
 }
 
 @media screen and (max-width: 465px) {
@@ -3825,11 +3837,6 @@ main {
 }
 .w-100 {
   width: 100% !important;
-}
-
-.menu-balance-btn {
-  padding-right: 32px !important;
-  padding-left: 24px !important;
 }
 
 .payments-icon {
