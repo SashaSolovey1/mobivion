@@ -3837,7 +3837,11 @@ main {
 }
 
 .tracking-table tbody tr th:first-child {
-  width: 364px !important;
+  width: 280px !important;
+}
+
+.tracking-table tbody tr td {
+  width: 360px !important;
 }
 
 .tracking-table tbody tr td {
@@ -3851,3 +3855,9 @@ main {
 .input-wrapper > input::placeholder {
   color:#1D1D1B;
 }
+
+.tracking-table {
+  margin-top: -25px;
+  border-spacing: 0 5px;
+}
+
