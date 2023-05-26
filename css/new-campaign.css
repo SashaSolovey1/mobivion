@@ -3584,10 +3584,7 @@ main {
     margin-right: 20px;
   }
 
-  .header-row > .col-5{
-    left: 30% !important;
-    justify-content: center !important;
-  }
+
 }
 
 @media screen and (max-width: 970px) {
@@ -3894,10 +3891,6 @@ main {
     font-size: 16px;
     margin-left: 18px;
     font-weight: 600;
-  }
-
-  .color-black p:first-child {
-    padding-left: 26px;
   }
 
   .format .input-container:nth-of-type(2) {

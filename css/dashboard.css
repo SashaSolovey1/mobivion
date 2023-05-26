@@ -3512,10 +3512,6 @@ main {
   .btn-toggle {
     margin-right: 20px;
   }
-
-  .header-row > .col-5{
-    left: 10% !important;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -3641,11 +3637,6 @@ main {
     margin-left: 0px !important;
   }
 
-  .color-black p:first-child {
-    padding-left: 26px;
-    font-size: 1em !important;
-  }
-
   .col-3 {
     padding: 0 0px;
   }
@@ -3731,10 +3722,6 @@ main {
     white-space: nowrap;
   }
 
-  .profile {
-    margin-left: 15px !important;
-  }
-
   .ph-text {
     font-size: 20px;
   }
@@ -3816,10 +3803,6 @@ main {
 
 .ph-div {
   overflow: hidden;
-}
-
-.balance-text {
-  margin-right: 23px;
 }
 
 .campaigns-table thead tr th:first-child {

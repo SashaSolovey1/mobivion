@@ -166,7 +166,7 @@
 }
 
 .profile {
-  margin-left: 7px !important;
+  margin-left: 32px !important;
 }
 
 .wrapper-menu-activities .title {
@@ -242,14 +242,35 @@
   margin-left: 0px !important;
 }
 
+.balance-text {
+  margin-right: 23px;
+}
+
 @media screen and (max-width: 1700px){
   .header-row > .col-5{
+    left: 50%;
+    justify-content: center !important;
+  }
+}
+
+@media screen and (max-width: 1183px) {
+  .header-row > .col-5{
     left: 40%;
+    justify-content: center !important;
   }
 }
 
 @media screen and (max-width: 768px) {
   .header-row > .col-5 {
-    width: 86% !important;
+    left: 20%;
+    justify-content: center !important;
+  }
+
+  .profile {
+    margin-left: 15px !important;
+  }
+
+  .balance {
+    margin-left: 0px !important;
   }
 }
