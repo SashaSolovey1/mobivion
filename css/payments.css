@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import "header.css";
 @import "sidebar.css";
+@import "table.css";
 /* Utils */
 .bg-white {
   background: #ffffff;
