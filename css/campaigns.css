@@ -3431,15 +3431,11 @@ main {
   }
 
   .scroll-left {
-    position: relative !important;
-    grid-row: 2;
-    grid-column: 1;
+    display: none !important;
   }
 
   .scroll-right {
-    position: relative !important;
-    grid-row: 2;
-    grid-column: 2;
+    display: none !important;
   }
 
   .campaigns-btns {
@@ -3613,6 +3609,23 @@ main {
 
   ::-webkit-scrollbar-thumb {
     background: transparent;
+  }
+
+  .table-btns {
+    padding-left: 15px;
+    overflow-x: auto;
+  }
+
+  .mobile-btn {
+    padding: 15px 18px;
+  }
+
+  .mobile-btn svg {
+    padding-top: 3px;
+  }
+
+  .header-dashboard {
+    height: 85px;
   }
 }
 
