@@ -4167,3 +4167,7 @@ th.sortedup svg path {
   width: fit-content;
 }
 
+.statistics-table tbody tr.banned {
+  opacity: 0.5;
+  --bs-table-striped-bg: #fff !important;
+} 
