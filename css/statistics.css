@@ -947,7 +947,7 @@ table tbody tr th {
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
   border-collapse: separate;
-  border-spacing: 0 20px;
+  border-spacing: 0 8px;
 }
 
 .table > :not(caption) > * > * {
@@ -993,7 +993,7 @@ table tbody tr th {
   border-top-width: 0;
 }
 
-/* .table-striped > tbody > tr:nth-of-type(odd) > * {
+.table-striped > tbody > tr:nth-of-type(odd) > * {
   --bs-table-accent-bg: var(--bs-table-striped-bg);
   color: var(--bs-table-striped-color);
 }
@@ -1001,7 +1001,18 @@ table tbody tr th {
 .table-striped-columns > :not(caption) > tr > :nth-child(even) {
   --bs-table-accent-bg: var(--bs-table-striped-bg);
   color: var(--bs-table-striped-color);
-} */
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > td:first-child {
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > td:last-child {
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
 
 .table-active {
   --bs-table-accent-bg: var(--bs-table-active-bg);
@@ -2729,7 +2740,7 @@ body {
 
 .content-main {
   display: flex;
-  margin-left: 96px;
+  margin-left: 100px;
   margin-bottom: 60px;
 }
 
