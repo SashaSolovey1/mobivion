@@ -1598,6 +1598,13 @@
       
       scrollLeftButton.style.setProperty('display', 'none', 'important');
       
+
+	  const isEndOfScroll = container.scrollLeft + container.offsetWidth >= container.scrollWidth - 1;
+        if (isEndOfScroll) {
+          scrollRightButton.style.setProperty('display', 'none', 'important');
+        } else {
+          scrollRightButton.style.setProperty('display', 'block', 'important');
+        }
       scrollLeftButton.addEventListener('click', () => {
         container.scrollLeft -= container.offsetWidth * 0.2;
       });
