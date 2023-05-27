@@ -3520,7 +3520,7 @@ main {
     min-width: 251px;
     display: grid !important;
     justify-content: start !important;
-    grid-template-columns: 20% 20% 8% 10%;
+    grid-template-columns: 7% 7% 4% 5%;
   }
 
   .btn-general {
@@ -3728,6 +3728,15 @@ main {
 
   ::-webkit-scrollbar-thumb {
     background: transparent;
+  }
+
+  .table-btns {
+    margin-left: 0px !important;
+    overflow-x: auto;
+  }
+
+  #filters-row {
+    padding-left: 0 !important;
   }
 }
 
