@@ -815,7 +815,7 @@
 											</div>
 										</div>
 									</div>
-									<div class='row flex-column align-items-end mr-3 payment'>
+									<div class='row flex-column align-items-end mr-3 payment' id="right_block">
 										<div class='col-7 bg-grey-block mb-4'>
 											<p class='fs-24 fw-600'>Payment details</p>
 											<div class="mt-5 user-info-block">
@@ -845,7 +845,7 @@
 									</div>
 		
 								</div>
-								<div class="row">
+								<div class="row" id="wallet_block">
 									<div class="col-6 bg-white-block wallet">
 										<p class="fs-24 fw-600 mb-4">
 											Wallet BTC
@@ -1407,6 +1407,45 @@ document.addEventListener('DOMContentLoaded', function() {
 			parentElement.classList.add("active");
 		});
 		});
+
+
+
+
+
+
+
+
+
+
+
+
+
+		function moveContentForMobile() {
+        var contentBlock = document.querySelector("#right_block");
+        var bidBlock = document.querySelector("#wallet_block");
+        var mobileHide = document.querySelector("#mobile-hide");
+        var createCampaign = document.querySelector("#create_campaign");
+        var backList = document.querySelector("#back_list");
+
+        if (window.innerWidth <= 768) {
+          // Проверяем ширину экрана для мобильных устройств
+          if (createCampaign && backList) {
+            // Проверяем, что оба элемента существуют
+            createCampaign.parentNode.insertBefore(
+              backList,
+              createCampaign.nextSibling
+            );
+          }
+          if (mobileHide) {
+            mobileHide.textContent = "Campaigns";
+          }
+          bidBlock.insertAdjacentElement("afterend", contentBlock); // Перемещаем content_block после bid_block
+        }
+      }
+
+      // Вызываем функцию при загрузке страницы и при изменении размера окна
+      window.addEventListener("load", moveContentForMobile);
+      window.addEventListener("resize", moveContentForMobile);
 
 </script>
 </body>
