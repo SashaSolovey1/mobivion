@@ -3485,6 +3485,7 @@ main {
 
   .row {
     display: block;
+    width: 77.5%;
   }
 
   .header-row {
@@ -3773,12 +3774,15 @@ main {
   ::-webkit-scrollbar-thumb {
     background: transparent;
   }
+
+  main {
+    margin-left: 10px;
+  }
 }
 
-@media screen and (max-width: 465px) {
+@media screen and (max-width: 390px) {
   .profile-info {
     width: 75% !important;
-    overflow-x: hidden;
   }
 
   #change-pass {
