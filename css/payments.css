@@ -3518,6 +3518,7 @@ main {
 
   .checkbox-list__item {
     margin-bottom: 10px;
+    width: auto;
   }
 
   .col-7 {
@@ -3604,7 +3605,6 @@ main {
 
   .payment div {
     width: 96% !important;
-    min-width: 322px;
   }
 
   .sidebar-list__item p {
@@ -3694,6 +3694,10 @@ main {
   
   ::-webkit-scrollbar-thumb {
     background: transparent;
+  }
+
+  .tab-content {
+    width: 90%;
   }
 }
 
@@ -4085,7 +4089,7 @@ th.sortedup svg path {
 }
 
 .wallet {
-  width: 48.8% !important;
+  width: 96% !important;
 }
 
 .tracking-inside {
