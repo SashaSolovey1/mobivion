@@ -23,7 +23,7 @@
   padding: 11px 15px;
 }
 .table-borderless tbody tr {
-  transition: all 0.3s;
+  transition: all 0s;
   cursor: pointer;
 }
 .table-borderless tbody tr:hover {
