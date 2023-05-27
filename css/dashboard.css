@@ -3919,7 +3919,7 @@ th:hover svg path {
 }
 
 .d-inline-block {
-  padding: 9px;
+  padding: 5.66px 10.96px;
 }
 
 .d-inline-block:hover {
@@ -3929,4 +3929,8 @@ th:hover svg path {
 
 .d-inline-block:hover a svg path{
   fill: #713EE6;
+}
+
+.d-inline-block a svg {
+  padding-top: 5px;
 }
