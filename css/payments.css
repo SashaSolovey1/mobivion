@@ -4090,5 +4090,9 @@ th.sortedup svg path {
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
-  color: #A5A5A4 !important;
+  color: #1D1D1B !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+  color: #A5A5A4;
 }

@@ -938,7 +938,7 @@
 		
 											<div class="select-wrapper method-selector">
 												<select class="select2">
-													<option value="" disabled selected>Method</option>
+													<option value=""></option>
 													<option value="option1">Option 1</option>
 													<option value="option2">Option 2</option>
 													<option value="option3">Option 3</option>
@@ -953,10 +953,10 @@
 
 											<div class="select-wrapper numbers-selector">
 												<select class="select2">
-													<option value="" disabled selected>100</option>
-													<option value="option1">200</option>
-													<option value="option2">300</option>
-													<option value="option3">400</option>
+													<option value="option1" selected>100</option>
+													<option value="option2">200</option>
+													<option value="option3">300</option>
+													<option value="option4">400</option>
 												</select>
 											</div>
 										</div>
@@ -1122,7 +1122,8 @@
 		});
 		$(document).ready(function () {
 			$('.select2').select2({
-			minimumResultsForSearch: 0
+			minimumResultsForSearch: 0,
+			placeholder: "Method"
 			});
 		});
 		$(document).ready(function () {
@@ -1130,6 +1131,7 @@
 			searchInputPlaceholder: 'Search'
 			});
 		});
+
     
 	</script>
 
@@ -1273,16 +1275,6 @@
       window.location.href = "payments.html";
     });
   });
-
-
-
-
-
-
-
-
-
-
 
 
 
