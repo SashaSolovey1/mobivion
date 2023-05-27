@@ -3681,6 +3681,7 @@ main {
 
   .content-main {
     margin-left: 0px !important;
+    padding-bottom: 70px;
   }
 
   .header-right {
@@ -3841,8 +3842,8 @@ main {
   }
 
   #content_block {
-    margin-top: 1rem;
-    width: 106% !important;
+    margin-top: 2rem;
+    width: 93.4% !important;
   }
 
   #create_campaign {
@@ -3931,6 +3932,10 @@ main {
 
   .row {
     width: 96%;
+  }
+
+  .bg-white-block {
+    padding-bottom: 30px !important;
   }
 }
 
