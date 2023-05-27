@@ -7,6 +7,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Source is banned",
+    isBanned: "banned",
   },
   {
     id: "1e88edf8c7",
@@ -16,6 +17,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Source is banned",
+    isBanned: "banned",
   },
   {
     id: "1e88edf8c8",
@@ -25,6 +27,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c7",
@@ -34,6 +37,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c8",
@@ -43,6 +47,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c7",
@@ -52,6 +57,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c8",
@@ -61,6 +67,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c7",
@@ -70,6 +77,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c8",
@@ -79,6 +87,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c7",
@@ -88,6 +97,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c8",
@@ -97,6 +107,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c7",
@@ -106,6 +117,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c8",
@@ -115,6 +127,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
 
   {
@@ -125,6 +138,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c6",
@@ -134,6 +148,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c7",
@@ -143,6 +158,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c8",
@@ -152,6 +168,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c9",
@@ -161,6 +178,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c6",
@@ -170,6 +188,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c7",
@@ -179,6 +198,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c8",
@@ -188,6 +208,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c9",
@@ -197,6 +218,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c10",
@@ -206,6 +228,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c11",
@@ -215,6 +238,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c12",
@@ -224,6 +248,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c13",
@@ -233,6 +258,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c14",
@@ -242,6 +268,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
   {
     id: "1e88edf8c15",
@@ -251,6 +278,7 @@ let data = [
     value4: 0,
     value5: 0,
     value6: "Ban source",
+    isBanned: "",
   },
 ];
 let currentPage = 1;
@@ -350,9 +378,9 @@ function updateTable() {
 
   pageData.forEach((item) => {
     tableBody.innerHTML += `
-    <tr>
-      <td class="fs-16 fw-400 banned" scope="row">${item.id}</td>
-      <td class="fs-16 fw-400" banned>${item.value1}</td>
+    <tr class="${item.isBanned}">
+      <td class="fs-16 fw-400 "scope="row">${item.id}</td>
+      <td class="fs-16 fw-400">${item.value1}</td>
       <td class="fs-16 fw-400">${item.value2}</td>
       <td class="fs-16 fw-400">${item.value3}</td>
       <td class="fs-16 fw-400">${item.value4}</td>
