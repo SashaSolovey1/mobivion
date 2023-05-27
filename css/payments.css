@@ -2920,7 +2920,7 @@ main {
   border: none;
   margin: 0;
   padding: 0;
-  color: #a5a5a4;
+  color: #1D1D1B;
   word-wrap: break-word;
   outline: none;
   display: flex;
@@ -2934,6 +2934,7 @@ main {
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
+  color: #A5A5A4;
 }
 
 .searchbar-right {
@@ -3089,6 +3090,7 @@ main {
   padding-left: 25px;
   transition: all 0.33s;
   cursor: pointer;
+  width: 160px;
 }
 .checkbox-list__item:hover {
   border: 1px solid #713ee6;
@@ -3096,7 +3098,6 @@ main {
 .checkbox-list__label {
   display: flex;
   align-items: center;
-  width: 100%;
   cursor: pointer;
 }
 .checkbox-list__label > *:not(input) {
@@ -3146,6 +3147,10 @@ main {
   font-size: 18px;
   line-height: 22px;
   color: #4a4a49;
+}
+
+.checkbox-list__item.active {
+  border: 1px solid #713ee6;
 }
 
 .input-container {
@@ -4082,4 +4087,8 @@ th.sortedup svg path {
 
 .tracking-inside {
   width: 70%;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #A5A5A4 !important;
 }

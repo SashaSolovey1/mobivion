@@ -1390,6 +1390,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+		// Отримуємо всі радіокнопки
+		const radioButtons = document.querySelectorAll(".checkbox-list__input");
+
+		// Додаємо подію "click" для кожної радіокнопки
+		radioButtons.forEach((radioButton) => {
+		radioButton.addEventListener("click", function () {
+			// Отримуємо батьківський елемент
+			const parentElement = this.closest(".checkbox-list__item");
+
+			// Знімаємо активний клас у всіх батьківських елементів
+			const allItems = document.querySelectorAll(".checkbox-list__item");
+			allItems.forEach((item) => {
+			item.classList.remove("active");
+			});
+
+			// Додаємо клас до поточного батьківського елемента
+			parentElement.classList.add("active");
+		});
+		});
+
 </script>
 </body>
 </html>
