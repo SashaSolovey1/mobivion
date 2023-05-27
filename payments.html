@@ -1447,6 +1447,41 @@ document.addEventListener('DOMContentLoaded', function() {
       window.addEventListener("load", moveContentForMobile);
       window.addEventListener("resize", moveContentForMobile);
 
+
+	  document.addEventListener("DOMContentLoaded", function() {
+        var faqLink = document.getElementById("dashboard-link_mobile");
+        faqLink.addEventListener("click", function() {
+          window.location.href = "dashboard.html";
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function() {
+        var faqLink = document.getElementById("campaigns-link_mobile");
+        faqLink.addEventListener("click", function() {
+          window.location.href = "campaigns.html";
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function() {
+        var faqLink = document.getElementById("statistics-link_mobile");
+        faqLink.addEventListener("click", function() {
+          window.location.href = "statistics.html";
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function() {
+        var faqLink = document.getElementById("tracking-link_mobile");
+        faqLink.addEventListener("click", function() {
+          window.location.href = "tracking.html";
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function() {
+        var faqLink = document.getElementById("payments-link_mobile");
+        faqLink.addEventListener("click", function() {
+          window.location.href = "payments.html";
+        });
+      });
 </script>
 </body>
 </html>

@@ -3491,6 +3491,7 @@ main {
 
   .row {
     display: block;
+    width: 95%;
   }
 
   .header-row {
