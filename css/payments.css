@@ -3120,6 +3120,9 @@ main {
   background: #713EE6;
   border-radius: 50%;
 }
+.checkbox-list__input:checked + .checkbox-list__custom-checkbox {
+  border-color: #713ee6;
+}
 .checkbox-list__custom-checkbox {
   position: relative;
   width: 20px;
