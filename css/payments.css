@@ -3638,6 +3638,7 @@ main {
   .btn-search {
     margin-left: 10px !important;
     display: inline !important;
+    padding-top: 10px !important;
   }
 
   .btn-general {
@@ -3649,12 +3650,14 @@ main {
     min-width: 251px;
     display: grid !important;
     justify-content: start !important;
-    grid-template-columns: 19% 5% 5% 5%;
+    grid-template-columns: 200px 50px 50px 40px;
     
   }
 
   .searchbar {
     grid-column: span 3;
+    margin-right: 8px;
+    width: auto !important;
   }
 
   .method-selector {
@@ -3698,6 +3701,14 @@ main {
 
   .tab-content {
     width: 90%;
+  }
+
+  #tab2 {
+    width: 700px;
+  }
+
+  .select2-container .select2-selection--single #select2-selectvalue-container {
+    padding-right: 0px !important;
   }
 }
 
@@ -4102,4 +4113,8 @@ th.sortedup svg path {
 
 .select2-container--default .select2-selection--single .select2-selection__placeholder {
   color: #A5A5A4;
+}
+
+.table-borderless tbody tr td:first-child {
+  min-width: 160px;
 }
