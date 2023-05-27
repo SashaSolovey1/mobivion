@@ -4043,6 +4043,10 @@ input.form-control {
   font-size: 14px;
 }
 
+input.form-control::placeholder {
+  color: #A5A5A4 !important;
+}
+
 .daterangepicker td.in-range {
   background-color: rgba(113, 62, 230, 0.1) !important;
 }
