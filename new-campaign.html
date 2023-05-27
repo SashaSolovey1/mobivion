@@ -21,7 +21,6 @@
     #right_block {
       position: fixed;
       right: 0;
-      top:128px;
     }
 
     p.current {
@@ -3248,6 +3247,41 @@
           parentElement.classList.add("active");
         });
       });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // Получаем элементы DOM
+const formatTrack = document.querySelector('#format_track');
+const rightBlock = document.querySelector('#right_block');
+
+// Функция для проверки положения верхушки экрана
+function checkScrollPosition() {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  // Проверяем положение верхушки экрана относительно элемента #format_track
+  if (scrollTop > formatTrack.offsetTop) {
+    // Если верхушка экрана выше, чем #format_track
+    rightBlock.style.top = '128px';
+  } else {
+    // Если верхушка экрана на уровне #format_track или ниже
+    rightBlock.style.top = '';
+  }
+}
+
+// Добавляем обработчик события прокрутки окна
+window.addEventListener('scroll', checkScrollPosition);
+
     </script>
   </body>
 </html>
