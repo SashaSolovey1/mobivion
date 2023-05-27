@@ -1360,41 +1360,57 @@
 	</script>
 
 	<script>
-      const container = document.querySelector('.table-btns');
-      const scrollLeftButton = document.querySelector('.scroll-left');
-      const scrollRightButton = document.querySelector('.scroll-right');
-      
-      scrollLeftButton.style.setProperty('display', 'none', 'important');
-      
 
-	  const isEndOfScroll = container.scrollLeft + container.offsetWidth >= container.scrollWidth - 1;
-        if (isEndOfScroll) {
-          scrollRightButton.style.setProperty('display', 'none', 'important');
-        } else {
-          scrollRightButton.style.setProperty('display', 'block', 'important');
-        }
-      scrollLeftButton.addEventListener('click', () => {
-        container.scrollLeft -= container.offsetWidth * 0.2;
-      });
-      
-      scrollRightButton.addEventListener('click', () => {
-        container.scrollLeft += container.offsetWidth * 0.2;
-      });
-      
-      container.addEventListener('scroll', () => {
-        if (container.scrollLeft <= 0) {
-          scrollLeftButton.style.setProperty('display', 'none', 'important');
-        } else {
-          scrollLeftButton.style.setProperty('display', 'block', 'important');
-        }
-      
-        const isEndOfScroll = container.scrollLeft + container.offsetWidth >= container.scrollWidth - 1;
-        if (isEndOfScroll) {
-          scrollRightButton.style.setProperty('display', 'none', 'important');
-        } else {
-          scrollRightButton.style.setProperty('display', 'block', 'important');
-        }
-      });
+	// Проверяем, является ли устройство десктопным
+function isDesktop() {
+  const desktopMediaQuery = window.matchMedia('(min-width: 1024px)');
+  return desktopMediaQuery.matches;
+}
+const scrollLeftButton = document.querySelector('.scroll-left');
+const scrollRightButton = document.querySelector('.scroll-right');
+// Проверяем, является ли текущее устройство десктопным
+if (isDesktop()) {
+  const container = document.querySelector('.table-btns');
+
+  scrollLeftButton.style.setProperty('display', 'none', 'important');
+
+  const isEndOfScroll = container.scrollLeft + container.offsetWidth >= container.scrollWidth - 1;
+  if (isEndOfScroll) {
+    scrollRightButton.style.setProperty('display', 'none', 'important');
+  } else {
+    scrollRightButton.style.setProperty('display', 'block', 'important');
+  }
+
+  scrollLeftButton.addEventListener('click', () => {
+    container.scrollLeft -= container.offsetWidth * 0.2;
+  });
+
+  scrollRightButton.addEventListener('click', () => {
+    container.scrollLeft += container.offsetWidth * 0.2;
+  });
+
+  container.addEventListener('scroll', () => {
+    if (container.scrollLeft <= 0) {
+      scrollLeftButton.style.setProperty('display', 'none', 'important');
+    } else {
+      scrollLeftButton.style.setProperty('display', 'block', 'important');
+    }
+
+    const isEndOfScroll = container.scrollLeft + container.offsetWidth >= container.scrollWidth - 1;
+    if (isEndOfScroll) {
+      scrollRightButton.style.setProperty('display', 'none', 'important');
+    } else {
+      scrollRightButton.style.setProperty('display', 'block', 'important');
+    }
+  });
+}
+
+else{
+	scrollLeftButton.style.setProperty('display', 'none', 'important');
+	scrollRightButton.style.setProperty('display', 'none', 'important');
+
+}
+
       
   	</script>
 
