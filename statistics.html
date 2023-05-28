@@ -8,19 +8,20 @@
 	<title>Statistics | Mobivion</title>
 	<link rel="stylesheet" href="css/statistics.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-	<link
-		href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
-		rel="stylesheet"
-	/>
-	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-	<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-	<script src="assets/plugins/global/plugins.bundle.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script src="js/select2.js"></script>
 	<link rel="stylesheet" href="css/virtual-select.min.css">
 	<link href="css/bootstrap-datepicker.css" rel="stylesheet"/>
 </head>
 <style>
 .sorted{
 color: #713EE6;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+	color: black !important;
 }
 </style>
 <body>
@@ -816,13 +817,15 @@ color: #713EE6;
 						</button>
 
 						<div class="select-wrapper" id="traffic-type">
-							<select class="select2">
-								<option value="" disabled selected>Traffic type</option>
+							<select name="traffic" class="color-grey select2-default" data-placeholder="Traffic type">
+								<option value=""></option>
 								<option value="option1">Option 1</option>
 								<option value="option2">Option 2</option>
 								<option value="option3">Option 3</option>
 							</select>
 						</div>
+
+
 
 						<div class="select-wrapper br-2 interval-selector datapicker">
 							<div class="mb-0 datapicker-div">
@@ -831,8 +834,8 @@ color: #713EE6;
 						</div>	
 
 						<div class="select-wrapper" id="compaign-choose">
-							<select class="select2">
-								<option value="" disabled selected>Choose compaign</option>
+							<select class="select2" data-placeholder="Choose campaign">
+								<option value=""></option>
 								<option value="option1">Option 1</option>
 								<option value="option2">Option 2</option>
 								<option value="option3">Option 3</option>
@@ -840,8 +843,8 @@ color: #713EE6;
 						</div>
 
 						<div class="select-wrapper" id="country">
-							<select class="select2">
-								<option value="">United States Of America</option>
+							<select class="select2" data-placeholder="Choose country">
+								<option value=""></option>
 								<option value="option1">Option 1</option>
 								<option value="option2">Option 2</option>
 								<option value="option3">Option 3</option>
@@ -1288,40 +1291,8 @@ color: #713EE6;
 	</script>
 
 	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-        var faqLink = document.getElementById("dashboard-link_mobile");
-        faqLink.addEventListener("click", function() {
-          window.location.href = "dashboard.html";
-        });
-      });
 
-      document.addEventListener("DOMContentLoaded", function() {
-        var faqLink = document.getElementById("campaigns-link_mobile");
-        faqLink.addEventListener("click", function() {
-          window.location.href = "campaigns.html";
-        });
-      });
 
-      document.addEventListener("DOMContentLoaded", function() {
-        var faqLink = document.getElementById("statistics-link_mobile");
-        faqLink.addEventListener("click", function() {
-          window.location.href = "statistics.html";
-        });
-      });
-
-      document.addEventListener("DOMContentLoaded", function() {
-        var faqLink = document.getElementById("tracking-link_mobile");
-        faqLink.addEventListener("click", function() {
-          window.location.href = "tracking.html";
-        });
-      });
-
-      document.addEventListener("DOMContentLoaded", function() {
-        var faqLink = document.getElementById("payments-link_mobile");
-        faqLink.addEventListener("click", function() {
-          window.location.href = "payments.html";
-        });
-      });
 	</script>
 	</body>
 </html>
