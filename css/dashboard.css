@@ -3833,6 +3833,7 @@ main {
 .campaigns-table tbody tr th {
   min-width: 50px;
   padding-top: 15px;
+  padding-right: unset;
 }
 
 .campaigns-table tbody tr td:first-child {
