@@ -991,7 +991,6 @@ table tbody tr th {
   background-color: var(--bs-table-bg);
   border-bottom-width: var(--bs-border-width);
   box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
-  padding-right: 1rem;
   vertical-align: top;
 }
 
@@ -3833,6 +3832,7 @@ main {
 .campaigns-table tbody tr td,
 .campaigns-table tbody tr th {
   min-width: 50px;
+  padding-top: 15px;
 }
 
 .campaigns-table tbody tr td:first-child {
