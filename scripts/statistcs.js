@@ -396,7 +396,7 @@ function updateTable() {
 window.onload = function () {
   document.getElementById("selectvalue").onchange = function (event) {
     rowsPerPage = parseInt(event.target.value, 10);
-
+    currentPage=1;
     paginateData();
     updateTable();
   };
