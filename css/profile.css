@@ -496,7 +496,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 17px;
   margin-right: 40px;
 }
 
@@ -3539,7 +3538,7 @@ main {
   } */
 
   .mobile-btn {
-    display: inline !important;
+    display: flex !important;
   }
 
   .sidebar-list {
