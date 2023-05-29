@@ -3582,9 +3582,7 @@ main {
 }
 
 @media screen and (max-width: 970px) {
-  .container-fluid.collapsed .profile-list {
-    transform: translateX(-50%) !important;
-  }
+
 
   .user-info-block {
     overflow-x: auto;

@@ -3396,9 +3396,7 @@ main {
 }
 
 @media screen and (max-width: 1000px) {
-  .container-fluid.collapsed .profile-list {
-    transform: translateX(-50%) !important;
-  }
+
 
   .wrapper-activities {
     display: none !important;
