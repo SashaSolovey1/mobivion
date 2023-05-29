@@ -1030,6 +1030,70 @@
 				window.location.href = "payments.html";
 				});
 			});
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		// Проверка, является ли устройство мобильным
+function isMobileDevice() {
+  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+}
+
+// Функция для изменения свойств элемента
+function changeProperties(elementId, opacityValue, leftValue) {
+  var element = document.getElementById(elementId);
+  if (element) {
+    element.style.opacity = opacityValue;
+    element.style.left = leftValue;
+  }
+}
+
+// Функция для обработки клика на элемент #profileMobile1
+function handleClickProfileMobile1() {
+  if (isMobileDevice()) {
+    changeProperties("Mobile1", 1, "unset");
+    changeProperties("Mobile2", 0, "unset");
+  }
+}
+
+// Функция для обработки клика на элемент #profileMobile2
+function handleClickProfileMobile2() {
+  if (isMobileDevice()) {
+    changeProperties("Mobile1", 0, "unset");
+    changeProperties("Mobile2", 1, "unset");
+  }
+}
+
+// Функция для обработки клика вне элементов Mobile1 и Mobile2
+function handleClickOutsideMobileElements(event) {
+  if (isMobileDevice()) {
+    var mobile1 = document.getElementById("Mobile1");
+    var mobile2 = document.getElementById("Mobile2");
+    var profileMobile1 = document.getElementById("profileMobile1");
+    var profileMobile2 = document.getElementById("profileMobile2");
+    
+    if (!mobile1.contains(event.target) && !profileMobile1.contains(event.target)) {
+      changeProperties("Mobile1", 0, "unset");
+    }
+    
+    if (!mobile2.contains(event.target) && !profileMobile2.contains(event.target)) {
+      changeProperties("Mobile2", 0, "unset");
+    }
+  }
+}
+
+// Назначение обработчиков событий клика на соответствующие элементы
+document.getElementById("profileMobile1").addEventListener("click", handleClickProfileMobile1);
+document.getElementById("profileMobile2").addEventListener("click", handleClickProfileMobile2);
+document.addEventListener("click", handleClickOutsideMobileElements);
+
+
     </script>
 </body>
 </html>
