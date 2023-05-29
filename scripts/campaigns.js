@@ -407,7 +407,7 @@ function updateTable() {
 
 document.getElementById("selectvalueFirst").onchange = function (event) {
   rowsPerPage = parseInt(event.target.value, 10);
-
+  currentPage=1;
   paginateData();
   updateTable();
 };
@@ -827,7 +827,7 @@ function updateTable_2() {
 window.onload = function () {
   document.getElementById("selectvalue2").onchange = function (event) {
     rowsPerPage_2 = parseInt(event.target.value, 10);
-    currentPage=1;
+    currentPage_2=1;
     paginateData_2();
     updateTable_2();
   };
